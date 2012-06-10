@@ -31,8 +31,8 @@ get_header(); ?>
 									</div>
 								</div>
 							</li>
-							<li data-video="http://www.youtube.com/watch?v=BCr7y4SLhck">
-								<img src="images/img/slide_2.jpg" alt="" class="slide-image" />
+							<li>
+								<img src="<?php echo get_template_directory_uri(); ?>/images/img/slide_2.jpg" alt="" class="slide-image" />
 								<div class="slideCaption">
 									<div class="slideCaptionInner">
 										<h2 style="margin:0;">Track Who is Watching Your Aircraft</h2>
@@ -61,8 +61,8 @@ get_header(); ?>
 							<p>&nbsp;</p>
 							<h1 class="aligncenter" style="font-size:30px;">
 							Hello, this is <span class="color_3">JetDeck</span>,
-							an Aircraft Sales Professional's weapon<br /> to act faster,
-							stay organized and close more deals.</h1>
+							an Aircraft Sales Professional's <br /> weapon to act faster,
+							be organized and close more deals.</h1>
 							<p>&nbsp;</p>
 							<div class="cl"></div>
 							<section class="post_type_shortcode">
@@ -89,12 +89,12 @@ get_header(); ?>
 										<div class="one_fourth">
 											<article class="portfolio hentry">
 												<figure class="top_img_radius">
-													<a href="album_four.html" class="preloader" title="">
-														<img src="images/img/fproject_4_1.jpg" alt="" class="fullwidth top_img_radius" />
+													<a href="#" class="preloader" title="">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/img/fproject_1_1.jpg" alt="" class="fullwidth top_img_radius" />
 													</a>
 												</figure>
 												<header class="entry-header">
-													<h4 class="entry-title"><a href="album_four.html">Engage Customers</a></h4>
+													<h4 class="entry-title"><a href="#">Engage Customers</a></h4>
 												</header>
 												<div class="entry-content">
 													<p>JetDeck allows brokers to send more specs, and do it quickly</p>
@@ -105,12 +105,12 @@ get_header(); ?>
 										<div class="one_fourth">
 											<article class="portfolio hentry">
 												<figure class="top_img_radius">
-													<a href="album_four.html" class="preloader" title="">
-														<img src="images/img/fproject_4_2.jpg" alt="" class="fullwidth top_img_radius" />
+													<a href="#" class="preloader" title="">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/img/fproject_1_2.jpg" alt="" class="fullwidth top_img_radius" />
 													</a>
 												</figure>
 												<header class="entry-header">
-													<h4 class="entry-title"><a href="album_four.html">Look Professional</a></h4>
+													<h4 class="entry-title"><a href="#">Look Professional</a></h4>
 												</header>
 												<div class="entry-content">
 													<p>Buyers always see up-to-date numbers and an impressive presentation</p>
@@ -121,15 +121,15 @@ get_header(); ?>
 										<div class="one_fourth">
 											<article class="portfolio hentry">
 												<figure class="top_img_radius">
-													<a href="album_four.html" class="preloader" title="">
-														<img src="images/img/fproject_4_3.jpg" alt="" class="fullwidth top_img_radius" />
+													<a href="#" class="preloader" title="">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/img/fproject_1_3.jpg" alt="" class="fullwidth top_img_radius" />
 													</a>
 												</figure>
 												<header class="entry-header">
-													<h4 class="entry-title"><a href="album_four.html">Monitor Activity</a></h4>
+													<h4 class="entry-title"><a href="#">Monitor Activity</a></h4>
 												</header>
 												<div class="entry-content">
-													<p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+													<p>Know when and how often a buyer views your aircraft spec</p>
 												</div>
 
 											</article>
@@ -137,100 +137,17 @@ get_header(); ?>
 										<div class="one_fourth">
 											<article class="portfolio hentry">
 												<figure class="top_img_radius">
-													<a href="album_four.html" class="preloader" title="">
-														<img src="images/img/fproject_4_4.jpg" alt="" class="fullwidth top_img_radius" />
+													<a href="#" class="preloader" title="">
+														<img src="<?php echo get_template_directory_uri(); ?>/images/img/fproject_1_4.jpg" alt="" class="fullwidth top_img_radius" />
 													</a>
 												</figure>
 												<header class="entry-header">
-													<h4 class="entry-title"><a href="album_four.html">Close Deals</a></h4>
+													<h4 class="entry-title"><a href="#">Close Deals</a></h4>
 												</header>
 												<div class="entry-content">
-													<p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
+													<p>Think strategically and act tactically</p>
 												</div>
 
-											</article>
-										</div>
-									</li>
-									<li class="latest_item">
-										<div class="one_fourth">
-											<article class="portfolio hentry">
-												<figure class="top_img_radius">
-													<a href="album_four.html" class="preloader" title="">
-														<img src="images/img/fproject_4_1.jpg" alt="" class="fullwidth top_img_radius" />
-													</a>
-												</figure>
-												<header class="entry-header">
-													<h4 class="entry-title"><a href="album_four.html">Fully responsive</a></h4>
-												</header>
-												<div class="entry-content">
-													<p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-												</div>
-												<footer class="entry-meta">
-													<ul class="cms_category">
-														<li><small><a href="#">Branding</a></small></li>
-													</ul>
-												</footer>
-											</article>
-										</div>
-										<div class="one_fourth">
-											<article class="portfolio hentry">
-												<figure class="top_img_radius">
-													<a href="album_four.html" class="preloader" title="">
-														<img src="images/img/fproject_4_2.jpg" alt="" class="fullwidth top_img_radius" />
-													</a>
-												</figure>
-												<header class="entry-header">
-													<h4 class="entry-title"><a href="album_four.html">Easy to customize</a></h4>
-												</header>
-												<div class="entry-content">
-													<p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-												</div>
-												<footer class="entry-meta">
-													<ul class="cms_category">
-														<li><small><a href="#">Websites</a></small></li>
-													</ul>
-												</footer>
-											</article>
-										</div>
-										<div class="one_fourth">
-											<article class="portfolio hentry">
-												<figure class="top_img_radius">
-													<a href="album_four.html" class="preloader" title="">
-														<img src="images/img/fproject_4_3.jpg" alt="" class="fullwidth top_img_radius" />
-													</a>
-												</figure>
-												<header class="entry-header">
-													<h4 class="entry-title"><a href="album_four.html">Clean & corporative</a></h4>
-												</header>
-												<div class="entry-content">
-													<p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-												</div>
-												<footer class="entry-meta">
-													<ul class="cms_category">
-														<li><small><a href="#">Photography</a>,</small></li>
-														<li><small><a href="#">Artwork</a></small></li>
-													</ul>
-												</footer>
-											</article>
-										</div>
-										<div class="one_fourth">
-											<article class="portfolio hentry">
-												<figure class="top_img_radius">
-													<a href="album_four.html" class="preloader" title="">
-														<img src="images/img/fproject_4_4.jpg" alt="" class="fullwidth top_img_radius" />
-													</a>
-												</figure>
-												<header class="entry-header">
-													<h4 class="entry-title"><a href="album_four.html">SEO optimised</a></h4>
-												</header>
-												<div class="entry-content">
-													<p>Cum sociis natoque penatibus et magnis dis parturient montes</p>
-												</div>
-												<footer class="entry-meta">
-													<ul class="cms_category">
-														<li><small><a href="#">Advertising</a></small></li>
-													</ul>
-												</footer>
 											</article>
 										</div>
 									</li>
