@@ -59,7 +59,8 @@ get_header(); ?>
 					<section id="middle_content">
 						<div class="entry">
 							<p>&nbsp;</p>
-							<h1 class="aligncenter" style="font-size:30px;">Hello, this is <span class="color_3">Shepard</span>, responsive corporate WordPress theme <br /> that perfectly fits to represent your Business</h1>
+							<h1 class="aligncenter" style="font-size:30px;">
+							Hello, this is <span class="color_3">JetDeck</span>, a tool specifically for aircraft brokers<br /> to act faster, stay organized and make more deals.</h1>
 							<p>&nbsp;</p>
 							<div class="cl"></div>
 							<section class="post_type_shortcode">
@@ -256,69 +257,7 @@ get_header(); ?>
 <!-- __________________________________________________ Finish Content -->
 
 <!-- __________________________________________________ Start Middle Sidebar -->
-					<div class="divider"></div>
-					<section class="middle_sidebar">
-						<div class="one_third">
-							<aside class="widget widget_text">
-								<h4 class="widgettitle">Who we are?</h4>
-								<div class="cms_widget_content">
-									<figure class="top_img_radius">
-										<img src="images/img/about_1.jpg" alt="" class="fullwidth top_img_radius" />
-									</figure>
-									<p></p>
-									<p>Pellentesque tristique volutpat nunc, id rhoncus augue tristique sed. In at nisln ulla, et vestibulum risus. Fermentum in eros. Nulla sed magna duiet vestibulum risus. Fermentum in eros.</p>
-									<a href="#" class="button fr"><span>Read More</span></a>
-								</div>
-							</aside>
-						</div>
-						<div class="one_third">
-							<aside class="widget widget_custom_tweets_entries">
-								<div class="widgettitle">
-									<a href="#" class="button fr"><span>Follow</span></a>
-									<h4>Twitter</h4>
-								</div>
-								<div id="tweetFeed"></div>
-								<script type="text/javascript">
-									jQuery(document).ready(function(){
-										jQuery('#tweetFeed').jTweetsAnywhere({
-											username: 'cmsmasters',
-											count: 3,
-											showTweetFeed : {
-												showTwitterBird: false
-											}
-										});
-									});
-								</script>
-							</aside>
-						</div>
-						<div class="one_third">
-							<aside class="widget widget_custom_recent_entries">
-								<h4 class="widgettitle">Latest Posts <span class="widget_navi"><a href="#" class="prev"></a><a href="#" class="next"></a></span></h4>
-								<ul>
-									<li>
-										<div class="cms_widget_content">
-											<figure class="alignleft"><img src="images/img/latest_post_1.jpg" alt="" /></figure>
-											<h6><a href="openpost.html">Fully responsive HTML5 & CSS3 template</a></h6>
-											<div class="cl"></div>
-											<p>Cum sociis natoque penatibus et magnis dis parturient montes. nascetur ridiculus mus.</p>
-											<abbr title="May 5" class="published">May 5</abbr>
-											<a class="cms_comment" href="openpost.html#comments"><small>3</small></a>
-										</div>
-									</li>
-									<li>
-										<div class="cms_widget_content">
-											<figure class="alignleft"><img src="images/img/latest_post_2.jpg" alt="" /></figure>
-											<h6><a href="openpost.html">Full browsers compatibility </a></h6>
-											<div class="cl"></div>
-											<p>Cum sociis natoque penatibus et magnis dis parturient montes. nascetur ridiculus mus.</p>
-											<abbr title="May 5" class="published">May 5</abbr>
-											<a class="cms_comment" href="openpost.html#comments"><small>3</small></a>
-										</div>
-									</li>
-								</ul>
-							</aside>
-						</div>
-					</section>
+
 <!-- __________________________________________________ Finish Middle Sidebar -->
 
 				</section>
