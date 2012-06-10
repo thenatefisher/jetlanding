@@ -97,7 +97,7 @@ get_header(); ?>
 													<h4 class="entry-title"><a href="album_four.html">Engage Customers</a></h4>
 												</header>
 												<div class="entry-content">
-													<p>JetDeck focuses on allowing brokers to send more specs, and do it quickly</p>
+													<p>JetDeck allows brokers to send more specs, and do it quickly</p>
 												</div>
 
 											</article>
@@ -113,7 +113,7 @@ get_header(); ?>
 													<h4 class="entry-title"><a href="album_four.html">Look Professional</a></h4>
 												</header>
 												<div class="entry-content">
-													<p>Buyers always see up-to-date numbers and impressive presentation</p>
+													<p>Buyers always see up-to-date numbers and an impressive presentation</p>
 												</div>
 
 											</article>
