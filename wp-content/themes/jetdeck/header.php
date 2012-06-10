@@ -86,18 +86,18 @@
 								<a href="#">
 									<span>
 										Get Started
-										<small class="subtitle">Try JetDeck Now!</small>
+										<small class="subtitle">Sell More Jets</small>
 									</span>
 								</a>
 							</li>
 							<li><a href="#">
 									<span>
 										Features
-										<small class="subtitle">Sell More Jets</small>
+										<small class="subtitle">Take a Tour</small>
 									</span>
 								</a>
 								<ul>
-									<li><a href="#">Specs</a></li>
+									<li><a href="#">Spec Management</a></li>
 									<li><a href="#">Contacts</a></li>
 									<li><a href="#">Communication</a></li>
 									<li><a href="#">Activity Tracking</a></li>
@@ -109,7 +109,7 @@
 								<a href="#">
 									<span>
 										Pricing
-										<small class="subtitle"></small>
+										<small class="subtitle">Try JetDeck Now!</small>
 									</span>
 								</a>
 							</li>
