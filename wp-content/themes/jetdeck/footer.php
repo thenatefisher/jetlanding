@@ -47,7 +47,7 @@
 										</li>
 										<li>
 											<h6><a href="album_four.html">SEO optimised</a></h6>
-											<img class="fullwidth middle_img_radius" src="images/img/fproject_4_4.jpg" alt="" />
+											<img class="fullwidth middle_img_radius" src="<?php echo get_template_directory_uri(); ?>/images/img/fproject_4_4.jpg" alt="" />
 										</li>
 									</ul>
 								</div>
@@ -151,7 +151,7 @@
 <!-- __________________________________________________ Start Footer -->
 		<footer id="footer">
 			<div class="footer_inner">
-				<span>Shepard &copy; 2012 All rights reserved</span>
+				<span>JetDeck &copy; 2012 All rights reserved</span>
 			</div>
 		</footer>
 <!-- __________________________________________________ Finish Footer -->
