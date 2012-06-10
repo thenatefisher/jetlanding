@@ -26,7 +26,7 @@ get_header(); ?>
 								<div class="slideCaption">
 									<div class="slideCaptionInner">
 										<a style="float:right; margin:6px 0 0;" href="#" class="button_medium"><span>Click Here</span></a>
-										<h2 style="margin:0;">There's a Better Way To Send Specs</h2>
+										<h2 style="margin:0;">Send Specs Like a Pro</h2>
 										<p style="padding:0;">Save your customer's inbox and deliver a more professional aircraft presentation</p>
 									</div>
 								</div>
