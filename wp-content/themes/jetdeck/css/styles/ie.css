@@ -1,0 +1,86 @@
+/* IE 8 */
+
+.table thead th {text-align:left;}
+
+span.dropcap2, 
+.wp-pagenavi a, 
+.wp-pagenavi span, 
+.cmsmsLike, 
+#header.navi_scrolled .top_scroll span, 
+.widget_navi .cmsms_content_prev_slide, 
+.widget_navi .cmsms_content_next_slide, 
+input, 
+textarea, 
+.button, 
+.button_medium, 
+.button_large, 
+.format_icon, 
+.top_img_radius, 
+.middle_img_radius, 
+.middle_img_radius_10 {
+	position:relative;
+	z-index:0;
+}
+
+.cmsms_plus {z-index:0;}
+
+div.p_filter {height:1000px;}
+
+.p_filter_container ul.p_filter {
+	padding:0;
+	top:30px;
+}
+
+#navigation ul li {
+	border-bottom:1px solid #ececec;
+	padding-bottom:0;
+}
+
+#navigation ul ul {padding-left:0;}
+
+ul.p_filter li:first-child {padding-top:0;}
+
+.cmsms-form-builder select {padding:8px 4px;}
+
+.button, 
+.button_medium, 
+.button_large, 
+.button > span, 
+.button_medium > span, 
+.button_large > span, 
+.button:hover > span, 
+.button_medium:hover > span, 
+.button_large:hover > span, 
+.wp-pagenavi a,
+#header.navi_scrolled {box-shadow:none;}
+
+#header.navi_scrolled {
+	margin-top:0;
+}
+
+.cmsms-form-builder .check_parent input[type="radio"]+label, 
+.wpcf7 .wpcf7-list-item input[type="radio"] + span,
+.cmsms-form-builder .check_parent input[type="checkbox"]+label, 
+.wpcf7 .wpcf7-list-item input[type="checkbox"] + span {background-image:none;}
+
+.cmsms-form-builder .check_parent input[type="radio"], 
+.wpcf7 .wpcf7-list-item input[type="radio"], 
+.cmsms-form-builder .check_parent input[type="checkbox"], 
+.wpcf7 .wpcf7-list-item input[type="checkbox"] {
+	filter:alpha(opacity=100);
+	margin-top:11px;
+}
+
+@media only screen and (min-width: 541px) and (max-width: 767px) {
+	
+	.one_fourth, 
+	.one_fourth.last,  
+	.one_fourth+.one_fourth, 
+	.one_fourth+.one_fourth+.one_fourth, 
+	.one_fourth+.one_fourth+.one_fourth+.one_fourth {
+		width:100%;
+		float:none;
+		padding-right:0;
+	}
+	
+}
