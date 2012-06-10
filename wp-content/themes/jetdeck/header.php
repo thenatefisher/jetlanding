@@ -73,41 +73,6 @@
 <!-- __________________________________________________ Start Page -->
 		<section id="page">
 			<div class="container">
-				<div class="social_block">
-					<ul>
-						<li>
-							<a href="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/icon_twitter.png" alt="" />
-								<span>Twitter</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/icon_linkedin.png" alt="" />
-								<span>Linked In</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/icon_googleplus.png" alt="" />
-								<span>Google Plus</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/icon_facebook.png" alt="" />
-								<span>Facebook</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/icon_dribbble.png" alt="" />
-								<span>Dribbble</span>
-							</a>
-						</li>
-					</ul>
-					<a href="#" class="social_toggle"><span></span></a>
-				</div>
 <!-- __________________________________________________ Start Header -->
 				<header id="header">
 					<a class="logo" href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="" /></a>

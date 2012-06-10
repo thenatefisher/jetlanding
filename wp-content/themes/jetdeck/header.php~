@@ -169,42 +169,6 @@
 								</ul>
 							</li>
 							<li>
-								<a href="portfolio_sort_four.html">
-									<span>
-										Portfolio
-										<small class="subtitle">Our works</small>
-									</span>
-								</a>
-								<ul>
-									<li><a href="portfolio_sort_four.html">Sortable Portfolio</a>
-										<ul>
-											<li><a href="portfolio_sort_one.html">One Column</a></li>
-											<li><a href="portfolio_sort_two.html">Two Columns</a></li>
-											<li><a href="portfolio_sort_three.html">Three Columns</a></li>
-											<li><a href="portfolio_sort_four.html">Four Columns</a></li>
-										</ul>
-									</li>
-									<li><a href="portfolio_one.html">Portfolio</a>
-										<ul>
-											<li><a href="portfolio_one.html">One Column</a></li>
-											<li><a href="portfolio_two.html">Two Columns</a></li>
-											<li><a href="portfolio_three.html">Three Columns</a></li>
-											<li><a href="portfolio_four.html">Four Columns</a></li>
-										</ul>
-									</li>
-									<li><a href="project_slider.html">Project layouts</a>
-										<ul>
-											<li><a href="project_slider.html">Image Slider</a></li>
-											<li><a href="project_video.html">Video</a></li>
-											<li><a href="album_four.html">Album Four Columns</a></li>
-											<li><a href="album_three.html">Album Three Columns</a></li>
-											<li><a href="album_two.html">Album Two Columns</a></li>
-											<li><a href="album_one.html">Album One Column</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>
 								<a href="blog_sidebar.html">
 									<span>
 										Blogs
