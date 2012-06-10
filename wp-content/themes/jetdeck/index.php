@@ -62,7 +62,7 @@ get_header(); ?>
 							<h1 class="aligncenter" style="font-size:30px;">
 							Hello, this is <span class="color_3">JetDeck</span>,
 							an Aircraft Sales Professional's <br /> weapon to act faster,
-							be organized and close more deals.</h1>
+							and close more deals.</h1>
 							<p>&nbsp;</p>
 							<div class="cl"></div>
 							<section class="post_type_shortcode">
