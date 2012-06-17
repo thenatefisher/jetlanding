@@ -10,10 +10,10 @@
 
 			        <p><span class="color_3">JetDeck</span> is an Aircraft Sales
 			        Professional's weapon to act faster, work in teams and close more
-			        deals. Manage aircraft specs and their contacts with JetDeck, then send
-			        links to customers with all the up-to-date data. Additionally,
-			        brokers can track lead activity on a particular spec to allowing
-			        for more tactical follow-up calls. </p>
+			        deals. Manage aircraft specs and their contacts with JetDeck,
+			        then send links to customers with all the up-to-date data. By
+			        tracking lead activity on a particular spec to, you can make
+			        more tactical follow-up calls to those most interested. </p>
 
 			        <h2>Work Faster. &nbsp;&nbsp;See More. &nbsp;&nbsp;Make Deals.</h2>
 
