@@ -16,12 +16,13 @@
 <meta name="description" content="An Aircraft Brokerage Tool for Professionals. Trading Jets Made Simple" />
 <meta name="keywords" content="brokerage, aircraft, jet, planefax, sale, controller, trade-a-plane" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title></title>
+<title>JetDeck.co | Sell More Aircraft</title>
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/css/styles/fonts.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/css/styles/colors.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,italic,bold,bolditalic" type="text/css" />
 <link rel="stylesheet" href="/css/styles/jquery.prettyPhoto.css" type="text/css" media="screen" />
+<link rel="icon" href="/favicon.png" type="image/gif"/>
 <!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/styles/ie.css" type="text/css" />
 	<link rel="stylesheet" href="css/styles/ieCss3.css" type="text/css" media="screen" />
@@ -49,7 +50,6 @@
 </head>
 	<body>
 
-
 		<section id="page">
 			<div class="container">
 <!-- __________________________________________________ Start Nav -->
@@ -62,14 +62,15 @@
 						</a>
 						<ul id="navigation">
 							<li>
-								<a href="#">
+								<a href="/signup.php">
 									<span>
 										Get Started
 										<small class="subtitle">Sell More Jets</small>
 									</span>
 								</a>
 							</li>
-							<li><a href="#">
+							<li>
+							  <a href="<?php echo ($_SERVER['SCRIPT_NAME'] == 'index.php') ? '#features' : '/index.php#features'; ?>">
 									<span>
 										Features
 										<small class="subtitle">Take a Tour</small>
@@ -77,7 +78,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="<?php echo ($_SERVER['SCRIPT_NAME'] == 'index.php') ? '#pricing' : '/index.php#pricing'; ?>">
 									<span>
 										Pricing
 										<small class="subtitle">Try JetDeck Now!</small>
@@ -85,7 +86,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="http://app.jetdeck.co">
 									<span>
 										Login
 										<small class="subtitle">To JetDeck</small>
@@ -96,17 +97,10 @@
 						</ul>
 						<select class="resp_navigation">
 							<option value="" selected="selected">Navigate to... </option>
-							<option value="#" class="main_item">Home</option>
-							<option value="#" class="main_item">Features</option>
-							<option value="#" class="main_item">Pricing</option>
+							<option value="http://app.jetdeck.co" class="main_item">Login</option>
+							<option value="#features" class="main_item">Features</option>
+							<option value="#pricing" class="main_item">Pricing</option>
 						</select>
 					</nav>
 				</header>
 <!-- __________________________________________________ Finish Nav -->
-
-
-
-
-
-
-	<div id="main">

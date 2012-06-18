@@ -574,14 +574,13 @@ select.resp_navigation option.main_item {font-weight:bold;}
 #hero_content h1 {
   font-size:30px;
   color: #ededed;
-  padding-top: 20px;
   padding-right: 30px;
   font-weight: bold;
 }
 
 #hero_content h2 {
   color: #ededed;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 #hero_content p {
@@ -592,17 +591,14 @@ select.resp_navigation option.main_item {font-weight:bold;}
   margin-right: 50px;
 }
 
-#hero_content .shock-and-awe {
-  width: 600px;
-  height: 400px;
+#hero_content .shock-and-awe img{
+  width: 475px;
   float: right;
   overflow: hidden;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	-webkit-box-shadow:0 4px 0 rgba(0, 0, 0, .2);
-	-moz-box-shadow:0 4px 0 rgba(0, 0, 0, .2);
-	box-shadow:0 4px 0 rgba(0, 0, 0, .2);
+
 }
 
 /* ---------- Middle ---------- */
@@ -686,6 +682,21 @@ video {background-color:#000000;}
 	float:right;
 	padding-right:0;
 }
+
+
+.one_third_hiw {
+	width:30.6%;
+	float:left;
+	padding-bottom:18px;
+	padding-right:4%;
+}
+
+.one_third_hiw.last {
+	width:30.6%;
+	float:right;
+	padding-right:0;
+}
+
 
 .one_third {
 	width:30.6%;
@@ -2512,7 +2523,7 @@ ul.p_filter li {
 	background:url(../images/bg_footer.jpg) repeat 0 0;
 	height:20px;
 	padding:35px 0;
-	margin-top:-90px;
+	margin-top: 60px;
 	overflow:hidden;
 	position:relative;
 }
@@ -3174,6 +3185,10 @@ ul.cmsms_slides_nav li a {
 
 @media only screen and (min-width: 1440px) {
 
+  #hero_content .shock-and-awe img{
+    width: 600px;
+  }
+
 	.social_block ul,
 	#header,
 	#header.navi_scrolled nav,
@@ -3181,7 +3196,6 @@ ul.cmsms_slides_nav li a {
 	#hero,
 	.bottom_inner,
 	.footer_inner {width:1160px;}
-
 
 
 	#navigation > li > a {padding-right:60px;}
@@ -3288,12 +3302,44 @@ ul.cmsms_slides_nav li a {
 
 	#sidebar .adv_widget_image {padding:0 3% 3% 0;}
 
+	#hero_content .shock-and-awe {
+    float: none;
+  }
+
 }
 
 
 /* ---------- Tablet Portrait (Note: Design for a width more than 767px but less than 1024px) ---------- */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+	.one_half,
+	.one_half.last,
+	.one_third,
+	.one_third.last,
+	.two_third,
+	.two_third.last,
+	.three_fourth,
+	.three_fourth.last,
+	.three_fourth+.one_fourth,
+	.one_fourth+.one_half+.one_fourth,
+	.portfolio_container.three_blocks .portfolio,
+	.cms_open.three_blocks .cms_media figure,
+	.cms_open.two_blocks .cms_media figure {
+		width:100%;
+		float:none;
+		padding-right:0;
+		text-align: center;
+	}
+
+  #hero_content .shock-and-awe {
+    text-align: center;
+  }
+
+	#hero_content .shock-and-awe img {
+    float: none;
+    margin: 0 auto;
+  }
 
 	#navigation > li > a {padding-right:30px;}
 
@@ -3306,6 +3352,38 @@ ul.cmsms_slides_nav li a {
 /* ---------- Small Tablet (Note: Design for a width more than 540px but less than 768px) ---------- */
 
 @media only screen and (min-width: 541px) and (max-width: 767px) {
+
+	.hiw_content {
+	  font-size: 20px;
+	  text-align: center;
+	}
+
+	.one_third_hiw,
+	.one_third_hiw.last {
+		width:100%;
+		float:none;
+		padding-right:0;
+		text-align: center;
+	}
+
+	.one_half,
+	.one_half.last,
+	.one_third,
+	.one_third.last,
+	.two_third,
+	.two_third.last,
+	.three_fourth,
+	.three_fourth.last,
+	.three_fourth+.one_fourth,
+	.one_fourth+.one_half+.one_fourth,
+	.portfolio_container.three_blocks .portfolio,
+	.cms_open.three_blocks .cms_media figure,
+	.cms_open.two_blocks .cms_media figure {
+		width:100%;
+		float:none;
+		padding-right:0;
+		text-align: center;
+	}
 
 	#navigation > li > ul {top:43px;}
 
@@ -3356,6 +3434,27 @@ ul.cmsms_slides_nav li a {
 
 @media only screen and (min-width: 400px) and (max-width: 540px) {
 
+	.one_half,
+	.one_half.last,
+	.one_third,
+	.one_third.last,
+	.one_third_hiw,
+	.one_third_hiw.last,
+	.two_third,
+	.two_third.last,
+	.three_fourth,
+	.three_fourth.last,
+	.three_fourth+.one_fourth,
+	.one_fourth+.one_half+.one_fourth,
+	.portfolio_container.three_blocks .portfolio,
+	.cms_open.three_blocks .cms_media figure,
+	.cms_open.two_blocks .cms_media figure {
+		width:100%;
+		float:none;
+		padding-right:0;
+		text-align: center;
+	}
+
 	#page,
 	#footer {min-width:240px;}
 
@@ -3377,6 +3476,34 @@ ul.cmsms_slides_nav li a {
 /* ---------- Small Monitor (Note: Design for a width less than 1024px) ---------- */
 
 @media only screen and (max-width: 1023px) {
+
+	.one_half,
+	.one_half.last,
+	.one_third,
+	.one_third.last,
+	.two_third,
+	.two_third.last,
+	.three_fourth,
+	.three_fourth.last,
+	.three_fourth+.one_fourth,
+	.one_fourth+.one_half+.one_fourth,
+	.portfolio_container.three_blocks .portfolio,
+	.cms_open.three_blocks .cms_media figure,
+	.cms_open.two_blocks .cms_media figure {
+		width:100%;
+		float:none;
+		padding-right:0;
+		text-align: center;
+	}
+
+  #hero_content .shock-and-awe {
+    text-align: center;
+  }
+
+	#hero_content .shock-and-awe img {
+    float: none;
+    margin: 0 auto;
+  }
 
 	#header.navi_scrolled nav,
 	#header,
@@ -3438,6 +3565,15 @@ ul.cmsms_slides_nav li a {
 
 	.social_block ul li span {display:none;}
 
+  #hero_content .shock-and-awe {
+    text-align: center;
+  }
+
+	#hero_content .shock-and-awe img {
+    float: none;
+    margin: 0 auto;
+  }
+
 	#header.navi_scrolled .top_scroll {display:none;}
 
 	.cmsms_slider_timer,
@@ -3479,6 +3615,7 @@ ul.cmsms_slides_nav li a {
 		width:100%;
 		float:none;
 		padding-right:0;
+		text-align: center;
 	}
 
 	.tour {
@@ -3519,6 +3656,14 @@ ul.cmsms_slides_nav li a {
 		margin-top:11px;
 	}
 
+	.one_third_hiw,
+	.one_third_hiw.last,
+		width:100%;
+		float:none;
+		padding-right:0;
+		text-align: center;
+	}
+
 	.comment-body .ovh .fr,
 	.comment-body .ovh .fl {float:none;}
 
@@ -3549,6 +3694,7 @@ ul.cmsms_slides_nav li a {
 		width:100%;
 		float:none;
 		padding-right:0;
+		text-align: center;
 	}
 
 	.cmsms-form-builder .cmsms_input {width:100%;}
