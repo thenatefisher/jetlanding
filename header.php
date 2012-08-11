@@ -16,7 +16,7 @@
 <meta name="description" content="An Aircraft Brokerage Tool for Professionals. Trading Jets Made Simple" />
 <meta name="keywords" content="brokerage, aircraft, jet, planefax, sale, controller, trade-a-plane" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>JetDeck.co | Sell More Aircraft</title>
+<title>JetDeck.co | Broker Tools to Sell More Aircraft </title>
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/css/styles/fonts.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/css/styles/colors.css" type="text/css" media="screen" />
@@ -54,7 +54,7 @@
 			<div class="container">
 <!-- __________________________________________________ Start Nav -->
 				<header id="header">
-					<a class="logo" href="index.html"><img src="/images/logo_black.png" alt="" /></a>
+					<a class="logo" href="index.html"><img src="/images/logo_black.png" style="width: 300px;" alt="" /></a>
 					<nav>
 						<a href="#" class="top_scroll">
 							<span></span>

@@ -16,7 +16,7 @@
 <meta name="description" content="An Aircraft Brokerage Tool for Professionals. Trading Jets Made Simple" />
 <meta name="keywords" content="brokerage, aircraft, jet, planefax, sale, controller, trade-a-plane" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>JetDeck.co | Sell More Aircraft</title>
+<title>JetDeck.co | Broker Tools to Sell More Aircraft </title>
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/css/styles/fonts.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="/css/styles/colors.css" type="text/css" media="screen" />
@@ -35,7 +35,7 @@
 <script src="/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <script type="text/javascript">
-/*
+
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-32538435-1']);
   _gaq.push(['_trackPageview']);
@@ -45,7 +45,7 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-*/
+
 </script>
 </head>
 	<body>
@@ -54,7 +54,7 @@
 			<div class="container">
 <!-- __________________________________________________ Start Nav -->
 				<header id="header">
-					<a class="logo" href="index.html"><img src="/images/logo_black.png" alt="" /></a>
+					<a class="logo" href="index.html"><img src="/images/logo_black.png" style="width: 200px;" alt="" /></a>
 					<nav>
 						<a href="#" class="top_scroll">
 							<span></span>

@@ -3,29 +3,45 @@
       <section id="hero_wrapper">
         <section id="hero">
           <section id="hero_content">
-            <div class="one_half">
-			        <h1>
+            <div class="one_half" style="padding-bottom: 0px;">
+			        <br><h1>
 			          Sell More Aircraft. Easier.
 			        </h1>
 
-			        <p><span class="color_3">JetDeck.co</span> is an Aircraft Sales
-			        Professional's weapon to act faster, work in teams and close more
-			        deals. Manage aircraft specs and their contacts with JetDeck.co,
-			        then send links to customers with all the up-to-date data. By
-			        tracking lead activity on a particular spec, you will make
-			        more tactical follow-up calls to those most interested. </p>
+			        <p><span class="color_3">JetDeck</span> is an Aircraft Sales
+			        Professional's technology to act faster, work in teams and close more
+			        deals. </p>
+			        
+			        <ul>
+			          <li>Manage aircraft specs and their contacts with JetDeck,
+			          then send links to customers with all the up-to-date data. </li>
+			          
+			          <li>Tracking lead activity on particular specs to get more value from 
+			          follow-up calls to those most interested. </li>
+			        </ul>
 
-			        <h2>Work Faster and Close More Deals.</h2>
-
-			        <a style="margin:6px 0 0;" href="/signup.php" class="button_medium">
+			        
+			        <div class="cms_title" style="background: #777; margin-right: 30px; padding-bottom: 30px; margin-bottom: 0px;">
+			        <p><strong class="color_3">Sign Up Now to Work Faster and Close More Deals.</strong></p>
+			        
+              <input type="text" style="float: left; width: 50%;"><br>
+              
+			        <a style="float: left; margin: -22px 15px" href="/signup.php" class="button_medium">
 			          <span>Get Started</span>
 			        </a>
+			        
+			        <div style="clear: both"></div>
+			        
+			        </div>
+			        
 			      </div>
-			      <div class="one_half">
+			      
+			      <div class="one_half" style="padding-bottom: 0px;">
 			        <div class="shock-and-awe">
 			          <img src="/images/img/screen2.png">
 			        </div>
 			      </div>
+			      
           </section>
         </section>
       </section>
