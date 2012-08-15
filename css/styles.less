@@ -1,0 +1,105 @@
+@import "less/bootstrap.less";
+
+html, body { height:100%; }
+
+body {
+	background: url(/img/bg/dots.png) repeat;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+.denim-box {
+  .rounded-corners;
+  background: url(/img/bg/denim.png) repeat;
+}
+
+.logo { width: 200px; }
+
+.nav-logo { margin-top: 30px; }
+
+.nav-buttons { margin-right: 0px; }
+
+.sweatband { 
+  width: 100%; 
+  position: absolute; 
+  top: 0;
+  background: url(/img/bg/denim.png) repeat;
+  margin: 0;
+  padding: 0;
+  height: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  padding: 0px;
+  margin-top: 50px;
+  color: #bbbbcd;
+  background: url(/img/bg/denim.png) repeat;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero-text { padding: 60px; }
+
+.hero h1 { margin-bottom: 20px; }
+
+.hero h3 {
+  color: #eee;
+  font-weight: normal;
+}
+
+.screenshot {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.screenshot img {
+  .center-block();
+  width: 940px;  
+}
+
+.alt-hero {
+  margin-top: 80px; 
+  text-align: center;
+}
+
+.alt-hero h1 {
+font-size: 60px;
+margin: 20px;
+color: #333;
+}
+
+.alt-hero h3 {
+font-size: 20px;
+color: #9999aa;
+line-height: 32px;
+}
+
+.login {
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+  color: #9999aa;
+  line-height: 20px;
+  clear: right;
+  margin-top: 10px;
+}
+
+.jetdeck_color { }
+
+.feature-section {
+  margin-top: 50px;
+  .center-block();
+  text-align: center;
+  
+}

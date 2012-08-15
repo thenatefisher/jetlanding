@@ -3434,6 +3434,11 @@ ul.cmsms_slides_nav li a {
 
 @media only screen and (min-width: 400px) and (max-width: 540px) {
 
+	.hiw_content {
+	  font-size: 20px;
+	  text-align: center;
+	}
+
 	.one_half,
 	.one_half.last,
 	.one_third,
