@@ -237,10 +237,10 @@
                         
             <div class="feature-sep span12" style="margin-left: 0px; padding: 30px;">
               <div class="span6" >
-                <h1>Stay Organized and Find More Deals</h1>
+                <h1>Stay Organized, Find More Deals</h1>
                 <h3><br></h3>
                 <p style="font-size: 20px; line-height: 30px; color: #888">
-                Do you have a real-time list of every contact associated with your aircraft? JetDeck provides a clear picture of who is most interested in which aircraft. </p>
+                JetDeck provides a clear picture of what aircraft are avialable and who is most interested. </p>
               </div>
               <div class="span6">
                 <img src="/img/feature/deck.png" style="float: right; border-radius: 6px 6px 0 0">
@@ -334,7 +334,7 @@
                     <td><h2>Secure Access</h2></td>
                   </tr>            
                   <tr>
-                    <td><button class="btn btn-success disabled btn-large"><h1>$125 <small style="color: #FFF">/ month</small></h1><i class="icon-asterisk icon-large"></i> Most Popular</button></td>
+                    <td><button class="btn btn-success disabled btn-large"><h1>$125 <small style="color: #FFF">/ month</small></h1></button></td>
                   </tr>                                           
                 </tbody>
               </table>              
