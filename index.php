@@ -154,7 +154,7 @@
           Professionals to act faster, work in teams and close 
           more deals. <button class="btn btn-primary btn-large" id="demo-cta" style="margin-top: -5px"> <strong> <i class="icon-hand-right icon-white"></i> Try a Demo Now! </strong> </button></h3>
           
-          <div id="demo" class="hide">
+          <div id="demo" style="display: none">
           
               <h3>Sending an aircraft presentation can be this easy!</h3>  
               
@@ -182,7 +182,7 @@
               
           </div>	
 
-          <div id="confirmation" class="hide">
+          <div id="confirmation" style="display: none">
               <h3>Thanks! Now check your email on a desktop PC, mobile or tablet device to see how your customers will experience your aircraft. Like what you see? <a href="/signup.php" style="margin: 5px;"> <strong> Sign Up! </strong> </a> </h3>
           </div>	
                     			
