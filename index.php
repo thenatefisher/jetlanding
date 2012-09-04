@@ -1,5 +1,4 @@
 <?php require("header.php"); ?>
-
 <script>
 
   var features = ['retail', 'stats', 'deck', 'spec'];
