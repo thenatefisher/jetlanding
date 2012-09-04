@@ -208,20 +208,18 @@
 
               </div>
 
-              <div class="span5" style="margin-left: 0px">
+              <div class="span5" style="margin-left: 0px; position: relative">
 
                   <!-- gallery items -->
                   <ul class="gallery">
                   
-                      
-                      
-                      
-                      
                       <li>              
                         <a href="img/1999750.jpg">
-                          <div style="border-radius: 6px; position: absolute; margin: 5px; background: #222222; color: #EEEEEE">
-                            <h1 style="margin: 10px 5px 5px 5px;"><i class="icon-search"></i></h1>
-                          </div>                        
+                          <div style="position: absolute; width: 100%">
+                          <div style="border-radius: 6px; background: #222222; color: #EEEEEE; opacity: .8; width: 75px; height: 75px; margin: 60px auto;">
+                            <h1 style="margin: 0px; padding: 20px 10px 0px 10px;"><i class="icon-search" style="opacity: .8;"></i></h1>
+                          </div>
+                          </div>                         
                           <img src="img/1999750.jpg" alt="2013 Gulfstream G650"> 
                         </a>
                       </li>
@@ -260,7 +258,7 @@
                                 
               </div>
               
-              <div class="span2" style="text-align: center">
+              <div class="span2" style="text-align: center; position: relative">
                   <!-- gallery items -->
                   <ul class="gallery" style="margin-bottom: 0px">
                   
@@ -270,11 +268,11 @@
                       
                       <li>                
                         <a href="img/1999750.jpg">
-                          <div style="border-radius: 6px; position: absolute; margin: 5px; background: #222222; color: #EEEEEE;opacity:  .3;">
-                            <h1 style="margin: 10px 5px 5px 5px;"><i class="icon-search" style="
-        opacity:  .3;
-    "></i></h1>
-                          </div>                      
+                          <div style="position: absolute; width: 100%">
+                          <div style="border-radius: 6px; background: #222222; color: #EEEEEE; opacity: .8; width: 75px; height: 55px; margin: 100px auto; padding-top: 20px;">
+                            <h1 style="margin: 0px; padding: 0px;"><i class="icon-search" style="opacity: .8;"></i></h1>
+                          </div>
+                          </div>               
                           <img src="img/1999750.jpg" alt="2013 Gulfstream G650"> 
                         </a>
                       </li>
