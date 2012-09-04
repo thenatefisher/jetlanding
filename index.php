@@ -11,12 +11,6 @@
   
   $(function() {
 
-    for (var t = 0; t < features.length; t++) {
-      
-      var img = "<img class='hide' src='img/rotator/" + features[t] + ".png'/>";
-      $("body").append(img);
-      
-    }
 
     $("#demo-cta").click(function() {
       $("#signup-subheader").hide();
@@ -389,5 +383,9 @@
   </div>
 </div>
 
+<img class='hide' src='img/rotator/spec.png'/>
+<img class='hide' src='img/rotator/deck.png'/>
+<img class='hide' src='img/rotator/retail.png'/>
+<img class='hide' src='img/rotator/stats.png'/>
 
 <?php require("footer.php"); ?>
