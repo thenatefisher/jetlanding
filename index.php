@@ -135,8 +135,17 @@
 
       <div class="alt-hero">
       
-        <h1 id="headline-rotate">Sell More Aircraft, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="text-rotate">Easier.</span><span class="text-rotate">Faster.</span><span class="text-rotate">Smarter.</span></h1>
+        <div id="hero-headline">
+        
+          <h1 id="headline-rotate">Sell More Aircraft,</h1>
+          
+          <div id="rotate-group">
+            <span class="text-rotate">&nbsp;Easier.</span>
+            <span class="text-rotate">&nbsp;Faster.</span>
+            <span class="text-rotate">&nbsp;Smarter.</span>
+          </div>
+          
+        </div>
         
         <div class="row-fluid">
         <div class="span2"></div>
@@ -146,39 +155,31 @@
           more deals. <button class="btn btn-primary btn-large" id="demo-cta" style="margin-top: -5px"> <strong> <i class="icon-hand-right icon-white"></i> Try a Demo Now! </strong> </button></h3>
           
           <div id="demo" class="hide">
+          
               <h3>Sending an aircraft presentation can be this easy!</h3>  
-              <h3>&nbsp;</h3>        
+              
+              <h3>&nbsp;</h3>       
+               
               <div class="span12 alert alert-error hide error-msg" style="display: none" id="validation-error">Please enter a name and valid email address.</div>
-              <div class="span12 alert alert-warning hide error-msg" style="display: none" id="send-error">Sorry, the demo is undergoing some maintenance right now and is not available. <br><strong><a href="signup.php">Sign Up for The Real Thing!</a></strong></div>               
-              <form>
-                                
-                  <table style="width: 100%;" id="demo-instructions">
-
-
-                  <tr>
-                  
-                  <td><input type="text" name="name" class="span12" placeholder="Name"></td>
-                  </tr>
-
-                  <tr>
-                  
-                  <td><input type="text" name="email" class="span12" placeholder="Email"></td>
-                  </tr>
-
-                  <tr>
-                  
-                  <td>
-                  
-                    <button id="demo-submit" class="btn btn-primary btn-large span12" onclick="return false" data-loading-text="Sending Spec...">
-                    <i class="icon-envelope-alt icon-large"></i> 
-                    <strong> Send the Spec!</strong></button>
- 
-                  </td>
-                  </tr>
-                  
-                  </table>
-
-              </form>
+              
+              <div class="span12 alert alert-warning hide error-msg" style="display: none" id="send-error">Sorry, the demo is undergoing some maintenance right now and is not available. <br>
+              
+              <strong><a href="signup.php">Sign Up for The Real Thing!</a></strong></div>               
+              
+              <input type="text" name="name" style="width: 90%;" placeholder="Name">
+              <input type="text" name="email" style="width: 90%;" placeholder="Email">
+              
+              <button id="demo-submit" 
+                      style="width: 92%;"
+                      class="btn btn-primary btn-large" 
+                      onclick="return false" 
+                      data-loading-text="Sending Spec...">
+                      
+              <i class="icon-envelope-alt icon-large"></i> 
+              <strong> Send a Spec!</strong>
+              
+              </button>
+              
           </div>	
 
           <div id="confirmation" class="hide">

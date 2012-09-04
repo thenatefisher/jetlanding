@@ -131,12 +131,32 @@ body {
   margin-bottom: 20px;
 }
 
-.text-rotate {
-  position: absolute;
-  text-align: left;
-  margin-left: -210px;
-  display: none;
+#hero-headline {
+  text-align: center;
+  margin: 20px auto;
+  width: 770px;
+  .clearfix();
+}
+
+#hero-headline h1 {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+#rotate-group {
+  float: left;
   color: #0074CC;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 10px;
+}
+
+.text-rotate {
+  display: none;
+  position: absolute;
 }
 
 .feature-well {
@@ -206,12 +226,6 @@ body {
   
 }
 
-#demo-instructions h3 {
-  color: #444
-}
-
-#demo-instructions, #demo-instructions input[type='text'], #demo-instructions button { margin: 10px auto; } 
-
 #mobile-feature img {
   margin-left: 30px;
 }
@@ -245,10 +259,14 @@ body {
     margin-right: 10px;
   }
 
-  .text-rotate {
-    margin-left: -170px;
+  #hero-headline {
+    width: 600px;
   }
-
+  
+  #rotate-group {
+    font-size: 50px;
+  }
+  
   .feature-well h1 {
     font-size: 20px; 
     line-height: 30px;
@@ -259,10 +277,6 @@ body {
     line-height: 30px;
   }
 
-  #demo-instructions h3 {
-    font-size: 17px;
-    margin-top: -5px;
-  }
 
 }
  
@@ -277,7 +291,6 @@ body {
   .logo { margin-left: 10px;}
   
   .screenshot {
-    margin: 60px auto 30px;
     width: 600px;
     height: 260px;
   }
@@ -288,18 +301,16 @@ body {
     font-size: 40px;
   }
 
-  .alt-hero h3 {
-    font-size: 20px;
-    color: #9999aa;
-    line-height: 35px;
-  }
-
   .login {
     margin-right: 20px;
   }
 
-  .text-rotate {
-    margin-left: -135px;
+  #hero-headline {
+    width: 500px;
+  }
+  
+  #rotate-group {
+    font-size: 40px;
   }
 
   .feature-sep .span6 {
@@ -312,8 +323,6 @@ body {
   }
   
   .feature-well h1 {
-    font-size: 20px; 
-    line-height: 30px;
     text-align: center;
     margin: 0px;
   }
@@ -329,14 +338,11 @@ body {
   }
    
   .feature-well h3 { 
-    font-size: 20px; 
-    line-height: 30px;
     text-align: center;
     margin: 0px;
   }
   
-  #demo-instructions input[type='text'], #demo-instructions button { margin: 10px auto; } 
-  
+
 }
 
 @media (max-width: 480px) {
@@ -345,13 +351,32 @@ body {
   
   .login, .buttons-span, .nav-buttons { float: none; width: 100%; .clearfix(); text-align: center; margin: 10px auto;}
 
+  .buttons-span .btn-group { display: none; }
+
+  .mobile-buttons { display: inline; margin-top: 20px; }
+  
   .screenshot {
     width: 400px;
-    height: 180px;
+    height: 120px;
   }
   
+  #hero-headline {
+    .clearfix();
+    width: 100%;
+    text-align: center;
+  }
+  
+  #headline-rotate {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #rotate-group {
+    .clearfix();
+    width: 100%;
+    text-align: center;
+  }  
+  
   #signup-subheader { width: 400px;}
-
-  #demo-instructions input[type='text'], #demo-instructions button { margin: 10px auto; } 
 
 }
