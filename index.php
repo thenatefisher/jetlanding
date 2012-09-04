@@ -39,25 +39,40 @@
         $("#demo-submit").button("loading");
           
         // attempt send
-        $.post("send.php", {email: email, name: name}, function(data) {
-        
-          $("#demo-submit").button("reset");
-        
-          if (data == "ok") {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: {email: email, name: name}, 
+          timeout: 3000,
+          dataType: "text",
+          error: function() {
           
-            // show success message
-            $("#demo").hide();
-            $("#confirmation").show();
-            $(".screenshot").css("margin", "35px auto");
+              // show error message
+              $("#send-error").show();
+              $("#demo-submit").hide(); 
+                       
+          },
+          success: function(data) {
+        
+            $("#demo-submit").button("reset");
+          
+            if (data == "ok") {
             
-          } else {
-          
-            // show error message
-            $("#send-error").show();
-            $("#demo-submit").hide();
+              // show success message
+              $("#demo").hide();
+              $("#confirmation").show();
+              $(".screenshot").css("margin", "35px auto");
+              
+            } else {
+            
+              // show error message
+              $("#send-error").show();
+              $("#demo-submit").hide();
+              
+            }
             
           }
-          
+            
         }); // end $.post()
         
       } // end validation
