@@ -8,7 +8,7 @@
   $email = $_REQUEST['email'];
   
   // create url
-  $url = urlencode("http://www.jetdeck.co/specs/4425542.php?name=$name");
+  $url = "http://www.jetdeck.co/specs/4425542.php?name=$name";
   
   // create message 
   if ($name && $url && validEmail($email)) {
