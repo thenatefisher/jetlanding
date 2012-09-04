@@ -59,7 +59,7 @@
             
               // show success message
               $("#demo").hide();
-              $("#confirmation").show();
+              $("#confirmation, #confirmation h3").show();
               $(".screenshot").css("margin", "35px auto");
               
             } else {
