@@ -13,7 +13,7 @@
   // create message 
   if ($name && $url && validEmail($email)) {
   
-    $message = file_get_contents("http://localhost/email.php?url=$url&name=$name&key=892y4uvn298n24gg2");
+    $message = file_get_contents("http://www.jetdeck.co/email.php?url=$url&name=$name&key=892y4uvn298n24gg2");
   
     // save user to mailing list
   
