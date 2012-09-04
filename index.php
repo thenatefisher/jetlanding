@@ -161,7 +161,7 @@
                
               <div class="span12 alert alert-error hide error-msg" style="display: none" id="validation-error">Please enter a name and valid email address.</div>
               
-              <div class="span12 alert alert-warning hide error-msg" style="display: none" id="send-error">Sorry, the demo is undergoing some maintenance right now and is not available. <br>
+              <div class="span12 alert alert-warning hide error-msg" style="display: none" id="send-error">Sorry, we can't send to the address you entered. Try another recipient or  <br>
               
               <strong><a href="signup.php">Sign Up for The Real Thing!</a></strong></div>               
               
