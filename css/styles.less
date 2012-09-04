@@ -1,4 +1,5 @@
 @import "less/bootstrap.less";
+@import "less/responsive.less";
 
 html, body { height:100%; }
 
@@ -19,17 +20,6 @@ body {
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
 }
-
-.denim-box {
-  .rounded-corners;
-  background: url(/img/bg/denim.png) repeat;
-}
-
-.logo { width: 200px; }
-
-.nav-logo { margin-top: 30px; }
-
-.nav-buttons { margin-right: 0px; }
 
 .sweatband { 
   width: 100%; 
@@ -61,6 +51,16 @@ body {
   color: #BFBFBF;
 }
 
+.jetdeck_word {
+  color: #3a3c4cf;
+}
+
+.logo { width: 200px; }
+
+.nav-logo { margin-top: 30px; }
+
+.nav-buttons { margin-right: 0px; }
+
 .footer ul { 
   list-style: none;
   margin: 5px 0;
@@ -79,25 +79,6 @@ body {
   margin: 20px 0;
   text-align: right;
   float: right;
-}
-
-.hero {
-  padding: 0px;
-  margin-top: 50px;
-  color: #bbbbcd;
-  background: url(/img/bg/denim.png) repeat;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.hero-text { padding: 60px; }
-
-.hero h1 { margin-bottom: 20px; }
-
-.hero h3 {
-  color: #eee;
-  font-weight: normal;
 }
 
 .screenshot {
@@ -137,18 +118,13 @@ body {
   line-height: 20px;
   clear: right;
   margin-top: 10px;
-  margin-right: 5px;
-}
-
-.jetdeck_word {
-  color: #3a3c4cf;
+  margin-right: 10px;
 }
 
 .feature-section {
   margin-top: 50px;
   .center-block();
   text-align: center;
-  
 }
 
 #mc_embed_signup h3 {
@@ -161,7 +137,6 @@ body {
   margin-left: -210px;
   display: none;
   color: #0074CC;
-  
 }
 
 .feature-well {
@@ -200,6 +175,13 @@ body {
   margin-left: 30px;
 }
 
+.feature-well h3{
+  font-size: 20px; 
+  line-height: 30px; 
+  color: #888;
+  font-weight: normal;
+}
+
 .section-heading h1 {
   text-align: center;
   margin-left: 30px;
@@ -224,4 +206,152 @@ body {
   
 }
 
+#demo-instructions h3 {
+  color: #444
+}
 
+#demo-instructions, #demo-instructions input[type='text'], #demo-instructions button { margin: 10px auto; } 
+
+#mobile-feature img {
+  margin-left: 30px;
+}
+
+#mc_embed_signup {
+  margin: 10px;
+  padding: 10px;
+  background: #FCF8E3;
+  border: 1px solid #FBEED5;
+}
+  
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .screenshot {
+    margin: 60px auto 30px;
+    width: 720px;
+    height: 300px;
+  }
+
+  .alt-hero h1 {
+    font-size: 50px;
+  }
+
+  .alt-hero h3 {
+    font-size: 20px;
+    color: #9999aa;
+    line-height: 35px;
+  }
+
+  .login {
+    margin-right: 10px;
+  }
+
+  .text-rotate {
+    margin-left: -170px;
+  }
+
+  .feature-well h1 {
+    font-size: 20px; 
+    line-height: 30px;
+  }
+  
+  .feature-well h3 { 
+    font-size: 20px; 
+    line-height: 30px;
+  }
+
+  #demo-instructions h3 {
+    font-size: 17px;
+    margin-top: -5px;
+  }
+
+}
+ 
+@media (max-width: 767px) {
+  
+  .logo-span { float: left; }
+  
+  .buttons-span { float: right; }
+  
+  .nav-buttons { margin-right: 10px;}
+  
+  .logo { margin-left: 10px;}
+  
+  .screenshot {
+    margin: 60px auto 30px;
+    width: 600px;
+    height: 260px;
+  }
+
+  #signup-subheader { width: 570px; margin: 0px auto;}
+  
+  .alt-hero h1 {
+    font-size: 40px;
+  }
+
+  .alt-hero h3 {
+    font-size: 20px;
+    color: #9999aa;
+    line-height: 35px;
+  }
+
+  .login {
+    margin-right: 20px;
+  }
+
+  .text-rotate {
+    margin-left: -135px;
+  }
+
+  .feature-sep .span6 {
+    text-align: center;
+  }
+
+  .feature-well img {
+    float: none;
+    margin: 20px auto;
+  }
+  
+  .feature-well h1 {
+    font-size: 20px; 
+    line-height: 30px;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  .feature-cta-sep a { margin: 20px auto; }
+  
+  #mobile-feature {
+    text-align: center;
+  }
+  
+  #mobile-feature img {
+    margin: 20px auto;
+  }
+   
+  .feature-well h3 { 
+    font-size: 20px; 
+    line-height: 30px;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  #demo-instructions input[type='text'], #demo-instructions button { margin: 10px auto; } 
+  
+}
+
+@media (max-width: 480px) {
+
+  .logo-span { width: 100%; .clearfix(); text-align: center;  }
+  
+  .login, .buttons-span, .nav-buttons { float: none; width: 100%; .clearfix(); text-align: center; margin: 10px auto;}
+
+  .screenshot {
+    width: 400px;
+    height: 180px;
+  }
+  
+  #signup-subheader { width: 400px;}
+
+  #demo-instructions input[type='text'], #demo-instructions button { margin: 10px auto; } 
+
+}

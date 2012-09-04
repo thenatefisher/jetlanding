@@ -13,7 +13,7 @@
 
 
     $("#demo-cta").click(function() {
-      $("#signup-subheader").hide();
+      $("#signup-subheader h3").hide();
       $("#demo").show();
       $("#demo-submit").button("reset");
       $(".screenshot").css("margin", "35px auto");
@@ -140,8 +140,8 @@
         
         <div class="row-fluid">
         <div class="span2"></div>
-        <div class="span8">
-          <h3 id="signup-subheader"> <span class="jetdeck_word">JetDeck</span> is technology for Aircraft Sales 
+        <div class="span8" id="signup-subheader">
+          <h3> <span class="jetdeck_word">JetDeck</span> is technology for Aircraft Sales 
           Professionals to act faster, work in teams and close 
           more deals. <button class="btn btn-primary btn-large" id="demo-cta" style="margin-top: -5px"> <strong> <i class="icon-hand-right icon-white"></i> Try a Demo Now! </strong> </button></h3>
           
@@ -152,25 +152,26 @@
               <div class="span12 alert alert-warning hide error-msg" style="display: none" id="send-error">Sorry, the demo is undergoing some maintenance right now and is not available. <br><strong><a href="signup.php">Sign Up for The Real Thing!</a></strong></div>               
               <form>
                                 
-                  <table style="width: 100%;">
+                  <table style="width: 100%;" id="demo-instructions">
 
 
                   <tr>
-                  <td style="text-align: left"><h3 style="color: #444">1. Tell us the recipient's name</h3></td>
+                  
                   <td><input type="text" name="name" class="span12" placeholder="Name"></td>
                   </tr>
 
                   <tr>
-                  <td style="text-align: left"><h3 style="color: #444">2. Enter their email address</h3></td>
+                  
                   <td><input type="text" name="email" class="span12" placeholder="Email"></td>
                   </tr>
 
                   <tr>
-                  <td></td>
+                  
                   <td>
+                  
                     <button id="demo-submit" class="btn btn-primary btn-large span12" onclick="return false" data-loading-text="Sending Spec...">
                     <i class="icon-envelope-alt icon-large"></i> 
-                    <strong> Then Send the Spec!</strong></button>
+                    <strong> Send the Spec!</strong></button>
  
                   </td>
                   </tr>
@@ -214,8 +215,8 @@
               <div class="span6" style="padding: 0px 30px; text-align: right;">
                 <h1>Beautiful, Personalized Presentation. Little Effort.</h1>
                 <h3><br></h3>
-                <p style="font-size: 20px; line-height: 30px; color: #888">
-                Stop struggling with the word processor or handling bulky hi-res photos over email. JetDeck delivers interactive, professional-looking specs, customized to each lead. </p>
+                <h3>
+                Stop struggling with software or handling bulky hi-res photos over email. JetDeck delivers interactive, professional-looking specs, customized to each lead. </h3>
               </div>
             </div>  
             
@@ -223,11 +224,11 @@
               <div class="span6">
                 <h1>React to Leads Faster</h1>
                 <h3><br></h3>
-                <p style="font-size: 20px; line-height: 30px; color: #888">
-                Send aircraft presentations with just a few clicks, from anywhere. Being more responsive means closing more deals.</p>
+                <h3>
+                Send aircraft presentations with just a few clicks, from anywhere. Being more responsive means closing more deals.</h3>
               </div>
               <div class="span6">
-                <img src="/img/feature/send.png" style="float: right; margin: 0;border-radius: 6px 6px 0 0">
+                <img src="/img/feature/send.png" class="pull-right" style="border-radius: 6px 6px 0 0">
               </div>            
             </div>
                         
@@ -238,9 +239,9 @@
               <div class="span6" style="text-align: right;">
                 <h1>Tailor Specs To Each Customer's Wants</h1>
                 <h3><br></h3>
-                <p style="font-size: 20px; line-height: 30px; color: #888">
+                <h3>
                 Easily modify the headlines and personal messages for each lead. JetDeck will save time and increase the quality of your customer interaction.
-                </p>
+                </h3>
               </div>
             </div>     
             
@@ -254,25 +255,24 @@
               <div class="span6" >
                 <h1>Stay Organized, Find More Deals</h1>
                 <h3><br></h3>
-                <p style="font-size: 20px; line-height: 30px; color: #888">
-                JetDeck provides a clear picture of what aircraft are avialable and who is most interested. </p>
+                <h3>JetDeck provides a clear picture of what aircraft are avialable and who is most interested. </h3>
               </div>
               <div class="span6">
-                <img src="/img/feature/deck.png" style="float: right; border-radius: 6px 6px 0 0">
+                <img src="/img/feature/deck.png" class="pull-right" style="border-radius: 6px 6px 0 0">
               </div>            
             </div>  
             
             <div class="span12" style="margin-left: 0px; padding-top: 30px;">
-              <div class="span6">
-                <img src="/img/feature/mobile.png" style="margin-top: 0px; margin-left: 30px; border-radius: 6px 6px 0 0">
+              <div class="span6" id="mobile-feature">
+                <img src="/img/feature/mobile.png">
               </div>                
               <div class="span6" style="padding: 0px 30px; text-align: right;">
                 <h1>Optimized For Today's Mobile Customers</h1>
                 <h3><br></h3>
-                <p style="font-size: 20px; line-height: 30px; color: #888">
+                <h3>
                 Over half of your customers are already reading email on 
                 mobile devices. JetDeck automatically makes your aircraft look great on
-                PCs, smart phones and tablets.</p>
+                PCs, smart phones and tablets.</h3>
               </div>
             </div>                           
           

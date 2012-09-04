@@ -5,9 +5,8 @@
   
     <div style="height: 50px;"></div>
     
-    <h1 style="font-size: 40px; line-height: 45px;">JetDeck is currently in beta and available by invitation only. </h1>
-
-    <img src="/img/caravan.jpg" alt="Get Ready for JetDeck!" style="border-radius: 6px; margin: 30px auto;">
+    
+    <h1 style="font-size: 40px; line-height: 45px; margin: 40px 20px;">JetDeck is currently in beta and available by invitation only. </h1>
     
     <div id="mc_embed_signup">
         <h3>Want early access? As soon as we're done adding all the finishing touches, you will be the first to know! </h3> 

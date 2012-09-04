@@ -58,13 +58,18 @@
 	
         <div class="container">
         
-            <div class="row-fluid">
+            <div class="row">
               <div class="span12 nav-logo">
-                <div class="row-fluid">
-                  <div class="span6">
-                    <a href="/" alt="JetDeck For Aircraft Brokers"><img class="logo" src="img/logo_black.png" /></a>
+                <div class="row">
+                
+                  <div class="span6 logo-span">
+                    <a href="/" alt="JetDeck For Aircraft Brokers">
+                    <img class="logo" src="img/logo_black.png" 
+                                      alt="JetDeck For Aircraft Brokers"/>
+                    </a>
                   </div>
-                  <div class="span6">
+                  
+                  <div class="span6 buttons-span">
                   
                     <div class="btn-group pull-right nav-buttons">
                       <a class="btn btn-large" href="/signup.php">Get Started</a>

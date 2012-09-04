@@ -4,8 +4,8 @@
   $sendgrid = new SendGrid('jetdeck', 'SendGrid1');
 
   // Sanitize name and email field
-  $name = $_REQUEST['name'];
-  $email = $_REQUEST['email'];
+  $name = ucfirst(trim($_REQUEST['name']));
+  $email = trim($_REQUEST['email']);
   
   // create url
   $url = "http://www.jetdeck.co/specs/4425542.php?name=$name";
