@@ -2,7 +2,21 @@
 
 <script>
 
+  var features = ['retail', 'stats', 'deck', 'spec'];
+  var currentFeature = 0;
+  var featureRotateTime = 5500;
+  var headlineRotateTime = 3500;
+  var featureTimeout = setTimeout('imageRotate()', featureRotateTime);
+  var headlineTimeout = setTimeout('headlineRotate()', headlineRotateTime);  
+  
   $(function() {
+
+    for (var t = 0; t < features.length; t++) {
+      
+      var img = "<img class='hide' src='img/rotator/" + features[t] + ".png'/>";
+      $("body").append(img);
+      
+    }
 
     $("#demo-cta").click(function() {
       $("#signup-subheader").hide();
@@ -60,13 +74,6 @@
     $(".text-rotate:first").show();
     
   });
-
-  var features = ['retail', 'stats', 'deck', 'spec'];
-  var currentFeature = 0;
-  var featureRotateTime = 5500;
-  var headlineRotateTime = 3500;
-  var featureTimeout = setTimeout('imageRotate()', featureRotateTime);
-  var headlineTimeout = setTimeout('headlineRotate()', headlineRotateTime);  
       
   function validated() {
   
