@@ -1,33 +1,30 @@
 <?php require("header.php"); ?>
 
-<!-- __________________________________________________ Start Middle -->
-				<section id="middle">
+<div class="row-fluid">
+  <div class="span12">
+  
+    <div style="height: 50px;"></div>
+    
+    <h1 style="font-size: 40px; line-height: 45px;">JetDeck is currently in beta and available by invitation only. </h1>
 
-							<section class="post_type_shortcode">
-								<h1 class="cms_title">We're Busy Making JetDeck.co Better!</h1>
-											<article class="portfolio hentry">
-												<header class="entry-header">
-													  <h2 class="entry-title"><a href="#">JetDeck.co is Currently in Beta and is Available by Invitation Only</a></h2>
-													  <h5>Signup to request an invite and be notified as soon as more spaces are available!</h5>
-												</header>
+    <img src="/img/caravan.jpg" alt="Get Ready for JetDeck!" style="border-radius: 6px; margin: 30px auto;">
+    
+    <div id="mc_embed_signup">
+        <h3>Want early access? As soon as we're done adding all the finishing touches, you will be the first to know! </h3> 
+        <p>Enter your email address to request an early access invite!</p>   
+               
+        <form action="http://jetdeck.us5.list-manage.com/subscribe/post?u=155f99ce18ef3231a8e006f54&amp;id=69f8562187" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"target="_blank">
 
-                        <!-- Begin MailChimp Signup Form -->
-                          <div id="mc_embed_signup">
-                            <form action="http://jetdeck.us5.list-manage.com/subscribe/post?u=155f99ce18ef3231a8e006f54&amp;id=69f8562187" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-	                          <input type="text" name="EMAIL" class="required email" id="mce-EMAIL" style="float: left; width: 50%; margin-right: 40px;">
-                          </div>
-	                        <div id="mce-responses" class="clear">
-		                        <div class="response" id="mce-error-response" style="display:none"></div>
-		                        <div class="response" id="mce-success-response" style="display:none"></div>
-	                        </div>
-	                        <input type="submit" value="Get On The List!" name="subscribe" id="mc-embedded-subscribe" class="button_large" style="padding: 10px; float: left;"></div>
-                        </form>
-                        </div>
-
-											</article>
-							</section>
-
-				</section>
-<!-- __________________________________________________ Finish Middle -->
+          <input type="text" name="EMAIL" id="mce-EMAIL" class="input-xlarge">
+          <input type="submit" value="Get On The List!" name="subscribe" 
+          id="mc-embedded-subscribe" class="btn btn-primary" style="margin-bottom: 7px;">
+          
+        </form>
+    </div>	
+    
+    <div style="height: 200px;"></div>
+    
+  </div>
+</div>
 
 <?php require("footer.php"); ?>

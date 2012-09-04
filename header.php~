@@ -54,28 +54,30 @@
 	
 	  <div class="sweatband"></div>
 	
-    <div class="container">
-    
-    <div class="row-fluid">
-      <div class="span12 nav-logo">
-        <div class="row-fluid">
-          <div class="span6">
-            <img class="logo" src="img/logo_black.png" />
-          </div>
-          <div class="span6">
-          
-            <div class="btn-group pull-right nav-buttons">
-              <button class="btn btn-large">Get Started</button>
-              <button class="btn btn-large">Features</button>
-              <button class="btn btn-large">Pricing</button>
-            </div>
-            
-            <div class="pull-right login">
-              Already a member? 
-              <a href="#">Log In</a>
-            </div>            
-            
-          </div>
-        </div>
-      </div>
-    </div>    
+	  <div class="background">
+	
+        <div class="container">
+        
+            <div class="row-fluid">
+              <div class="span12 nav-logo">
+                <div class="row-fluid">
+                  <div class="span6">
+                    <a href="/" alt="JetDeck For Aircraft Brokers"><img class="logo" src="img/logo_black.png" /></a>
+                  </div>
+                  <div class="span6">
+                  
+                    <div class="btn-group pull-right nav-buttons">
+                      <a class="btn btn-large" href="/signup.php>Get Started</a>
+                      <a class="btn btn-large" href="/#features">Features</a>
+                      <a class="btn btn-large" href="/#pricing">Pricing</a>
+                    </div>
+                    
+                    <div class="pull-right login">
+                      Already a member? 
+                      <a href="http://app.jetdeck.co">Log In</a>
+                    </div>            
+                    
+                  </div>
+                </div>
+              </div>
+            </div>    
