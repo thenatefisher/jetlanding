@@ -255,7 +255,7 @@
               <div class="span6" >
                 <h1>Stay Organized, Find More Deals</h1>
                 <h3><br></h3>
-                <h3>JetDeck provides a clear picture of what aircraft are avialable and who is most interested. </h3>
+                <h3>JetDeck provides a clear picture of what aircraft are available and who is most interested. </h3>
               </div>
               <div class="span6">
                 <img src="/img/feature/deck.png" class="pull-right" style="border-radius: 6px 6px 0 0">
