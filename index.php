@@ -149,7 +149,7 @@
         <div class="row-fluid">
         <div class="span2"></div>
         <div class="span8" id="signup-subheader">
-          <h3> <span class="jetdeck_word">JetDeck</span> is technology for Aircraft Sales 
+          <h3> <span class="jetdeck_word">JetDeck</span> is an inventory and contact manager for Aircraft Sales 
           Professionals to act faster, work in teams and close 
           more deals. <button class="btn btn-primary btn-large" id="demo-cta" style="margin-top: -5px"> <strong> <i class="icon-hand-right icon-white"></i> Try a Demo Now! </strong> </button></h3>
           
@@ -280,118 +280,6 @@
           
       </div>                        
       
-      <a name="pricing"></a>
-      <div class="row-fluid clearfix" style="margin-top: 80px">
-      <div class="span12 section-heading">
-      <h1>Simple. <small> Predictable Pricing. </small> </h1>
-      </div>
-      </div>
-      <div class="row-fluid clearfix pricing">
-      
-          <div class="feature-well span12">
-          
-              <div class="alert" style="padding: 30px; font-size: 14px; border-radius: 3px 3px 0 0; line-height: 22px"><strong>JetDeck is currently in beta testing </strong> and finalizing some of the features shown here. While we're preparing to deliver an amazing user experience for aircraft brokers and their customers, <strong><a href="/signup.php">get on the invite list</a></strong> for introductory offers and early access! </div>
-              
-              <div class="span12" style="padding: 10px 30px; margin-left: 0px">
-                                          
-               <div class="span3" style="margin-top: 20px;">
-               <table class="table table-hover table-bordered">
-                <thead>
-                  <tr style="background: grey; color: white;">
-                    <th><h1>Individual</h1></th>
-                  </tr>                 
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><h2>Single User</h2></td>
-                  </tr>   
-                  <tr>
-                    <td><h2>Unlimited Aircraft</h2></td>
-                  </tr>     
-                  <tr>
-                    <td><h2>Email Support</h2></td>
-                  </tr>  
-                  <tr>
-                    <td><h2>Secure Access</h2></td>
-                  </tr>  
-                  <tr>
-                    <td><button class="btn btn disabled"><h1>$45 <small>/ month</small></h1></button></td>
-                  </tr>                                                 
-                </tbody>
-              </table>
-              </div>
-              
-              <div class="span3">
-               <table class="table table-hover table-bordered">
-                <thead>
-                  <tr>
-                    <th style="background: #5BB75B; color: white;">
-                    
-                    <h1>Team</h1>
-                    
-                    </th>
-                  </tr>                 
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><h2>Up To 3 Users</h2></td>
-                  </tr>   
-                  <tr>
-                    <td><h2>Unlimited Aircraft</h2></td>
-                  </tr>     
-                  <tr>
-                    <td><h2>Collaboration Tools</h2></td>
-                  </tr>  
-                  <tr>
-                    <td><h2>Voice Support</h2></td>
-                  </tr>
-                  <tr>
-                    <td><h2>Secure Access</h2></td>
-                  </tr>            
-                  <tr>
-                    <td><button class="btn btn-success disabled btn-large"><h1>$125 <small style="color: #FFF">/ month</small></h1></button></td>
-                  </tr>                                           
-                </tbody>
-              </table>              
-              </div>
-              
-              <div class="span3" style="margin-top: 20px; text-align: center;">
-              <table class="table table-hover table-bordered" style="margin-bottom: 5px;">
-                <thead>
-                  <tr style="background: grey; color: white;">
-                    <th><h1>Enterprise</h1></th>
-                  </tr>                 
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><h2>Up To 10 Users</h2></td>
-                  </tr>   
-                  <tr>
-                    <td><h2>Unlimited Aircraft</h2></td>
-                  </tr>     
-                  <tr>
-                    <td><h2>24 Hr Voice Support</h2></td>
-                  </tr>  
-                  <tr>
-                    <td><h2>Secure Access</h2></td>
-                  </tr>   
-                  <tr>
-                    <td><button class="btn disabled"><h1>$385 <small>/ month</small></h1></button></td>
-                  </tr>                                                 
-                </tbody>
-              </table>  
-              <small><a href="mailto:support@jetdeck.co?subject=Tell me about JetDeck for large teams">More than 10 Users?</a></small>
-              </div>
-                     
-              <div class="span3" style="margin-top: 40px; text-align: right;">
-                <h2 style="font-weight: bold">Try JetDeck Risk Free</h2>
-                <p style="font-size: 20px; line-height: 30px; color: #888"> Every plan includes a free 30-day trial period to make sure it's right for you. <strong>No credit card required!</strong> </p>
-              </div>
-                       
-              </div> <!--span12-->    
-          </div> <!--feature-well-->
-                     
-      </div>    
            
       <br><br><br>
                   

@@ -74,14 +74,13 @@
                     <div class="btn-group pull-right nav-buttons">
                       <a class="btn btn-large" href="/signup.php">Get Started</a>
                       <a class="btn btn-large" href="/#features">Features</a>
-                      <a class="btn btn-large" href="/#pricing">Pricing</a>
                     </div>
                     
                     <div class="mobile-buttons nav-buttons hide">
                       <br>
                       <a class="btn btn-large" href="/signup.php">Get Started</a>
                       <a class="btn btn-large" href="/#features">Features</a>
-                      <a class="btn btn-large" href="/#pricing">Pricing</a>
+            
                     </div>
                                         
                     <div class="pull-right login">
