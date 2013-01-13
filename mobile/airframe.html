@@ -1,108 +1,300 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ratchet template page</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Demos and Documentation</title>
+	
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.2.0.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/mobile.css" />
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.2.0.js"></script>
+	
+</head>
+<body>
+<div data-role="page" class="type-home" data-theme="b">
 
-    <!-- Sets initial viewport load and disables zooming  -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- Set Apple icons for when prototype is saved to home screen -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link rel="stylesheet" href="css/ratchet.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    
-    <!-- Include the compiled Ratchet JS -->
-    <script src="ratchet.js"></script>
-
-    <style type="text/css">
-        a i { color: white; }
-    </style>
-
-  </head>
+  <div data-role="header"> 
+    <a href="airframes.html" data-theme="b" data-icon="back" data-transition="slide" data-direction="reverse">Back</a>
+    <h1>2011 Gulfstream G550</h1> 
+  </div> 
   
-  <body>
-  
-  <header class="bar-title">
-    <a class="button" href="deck.html">
-      Back
-    </a>
-    <h1 class="title">2005 G550</h1>
-  </header>
-
-  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-  <div class="content">
-
-<div class="slider">
-  <ul>
-    <li>
-      <img src="img/1999750.jpg">
-    </li>
-    <li>
-      <img src="img/2114280.jpg">
-    </li>
-    <li>
-      <img src="img/2127532.jpg">
-    </li>
-  </ul>
-</div>    
-
-    Full Name
-    Serial
-    Reg
+  <div align="center" style="overflow: hidden">
+    <!--<img src="http://2.bp.blogspot.com/-gErTVEDlEqM/Ti0T_5IgtWI/AAAAAAAANqE/Cxd3bIYO8v0/s1600/Gulfstream+G550+by+jet+airplanes+%252812%2529.jpg" width="100%"/>-->
     
-    Asking Price
+    <div style="width: 100%; background: #DEDEDE url('images/diamond_upholstery.png'); margin: 0px; text-align: center;">
+    <img src="images/logo_black_emblem.png" style="margin: 10px;"/>
+    </div>
     
-    Leads
-    
-    Actions
-    
-    Delete
-
   </div>
+  
+	<div data-role="content" class="ui-content" role="main">
 
-  <nav class="bar-tab">
-    <ul class="tab-inner">
-      <li class="tab-item">
+		<div class="content-primary">
+
+		  <h2 style="margin-top: 0px">2011 Gulfstream G550</h2> 
+		  
+      <a href="#popupMenu" data-rel="popup" data-role="button" style="float: right;">Send</a>
+		  <div data-role="popup" id="popupMenu" data-theme="a">
+				  <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+					  <li data-role="divider" data-theme="a">Send Spec</li>
+					  <li><a href="send_spec.html">To New Contact</a></li>
+					  <li><a href="send_to_existing.html">To Existing Contact</a></li>
+				  </ul>
+		  </div>  			  
+		  
+      <table style="text-align: left"  data-inline="true">
+
+		    <tbody>
+		    <tr>
+		      <th scope="row">Serial</th>
+		      <td>&nbsp;&nbsp;5693</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">Reg</th>
+		      <td>&nbsp;&nbsp;N2345</td>
+		    </tr>		
+		    <tr>
+		      <th scope="row">Asking</th>
+		      <td>&nbsp;&nbsp;$56,233,000</td>
+		    </tr>				    
+		    </tbody>
+		    
+		  </table>
+	    
+
+
+	    
+      <div data-role="collapsible-set" data-inset="false">
+	
+	      <div data-role="collapsible" data-collapsed="true">
+	      <h3>Details</h3>
+	      <p>I'm the collapsible set content for section 2.</p>
+	      </div>
+	      	
+	      <div data-role="collapsible" data-collapsed="true">
+	      <h3>Leads</h3>
+	      
+			  <ul data-role="listview" data-filter-theme="d" data-theme="d" data-divider-theme="d" class="ui-listview">
+        
+	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn">
+	      
+              <a href="#" class="ui-link-inherit" data-transition="slide">
+				          <h3 class="ui-li-heading">New Lead</h3>
+		          </a>
+	          
+	      </li>
+	              
+	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn">
+	      
+              <a href="#.html" class="ui-link-inherit" data-transition="slide">
+				          <h3 class="ui-li-heading">Nate Fisher</h3>
+				          <p class="ui-li-desc">Last Sent on June 12, 7:45PM</p>
+				          <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">3 Hits</span>
+		          </a>
+		          
+              <a href="#contact_12_popup" data-rel="popup" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c" aria-haspopup="true" aria-owns="#purchase">
+
+              <span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="gear" data-iconpos="notext" data-theme="d" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-gear ui-icon-shadow">&nbsp;</span></span></span></span></a>	
+
+              <div data-role="popup" id="contact_12_popup" data-theme="a">
+	                <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+		                <li><a href="options.html">View Spec</a></li>
+		                <li><a href="methods.html">View Contact</a></li>
+	                </ul>
+              </div>
+              		          
+	      </li>
+	      
+	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn">
+	      
+              <a href="#.html" class="ui-link-inherit" data-transition="slide">
+				          <h3 class="ui-li-heading">Peter Smith</h3>
+				          <p class="ui-li-desc">Last Sent on June 12, 7:45PM</p>
+				          <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">1 Hits</span>
+		          </a>
+		          
+              <a href="#contact_12_popup" data-rel="popup" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c" aria-haspopup="true" aria-owns="#purchase">
+
+              <span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="gear" data-iconpos="notext" data-theme="d" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-gear ui-icon-shadow">&nbsp;</span></span></span></span></a>	
+
+              <div data-role="popup" id="contact_12_popup" data-theme="a">
+	                <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+		                <li><a href="options.html">View Spec</a></li>
+		                <li><a href="methods.html">View Contact</a></li>
+	                </ul>
+              </div>
+	          
+	      </li>
+	      
+	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn">
+	      
+              <a href="#.html" class="ui-link-inherit" data-transition="slide">
+				          <h3 class="ui-li-heading">Jim Stevens</h3>
+				          <p class="ui-li-desc">Last Sent on June 12, 7:45PM</p>
+				          <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">5 Hits</span>
+		          </a>
+		          
+              <a href="#contact_12_popup" data-rel="popup" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c" aria-haspopup="true" aria-owns="#purchase">
+
+              <span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="gear" data-iconpos="notext" data-theme="d" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-gear ui-icon-shadow">&nbsp;</span></span></span></span></a>	
+
+              <div data-role="popup" id="contact_12_popup" data-theme="a">
+	                <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+		                <li><a href="options.html">View Spec</a></li>
+		                <li><a href="methods.html">View Contact</a></li>
+	                </ul>
+              </div>
+              		          
+	      </li>	      	      
+	      
+	      </ul>	      
+	      </div>
+	
+	      <div data-role="collapsible" data-collapsed="true">
+	      <h3>Actions</h3>
+   
+        
+			  <ul data-role="listview" data-filter-theme="d" data-theme="d" data-divider-theme="d" class="ui-listview">
+        
+        
+	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn">
+	      
+              <a href="#" class="ui-link-inherit" data-transition="slide">
+				          <h3 class="ui-li-heading">New Action</h3>
+		          </a>
+	          
+	      </li>
+
+        
+	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn">
+	      
+              <a href="#" class="ui-link-inherit" data-transition="slide">
+				          <h3 class="ui-li-heading">The header is a toolbar at the top of the page that usually contains the page title text and optional buttons</h3>
+				          <p class="ui-li-desc">Due June 12, 7:45PM</p>
+		          </a>
+		          
+              <a href="#action_12_popup" data-rel="popup" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c" aria-haspopup="true" aria-owns="#purchase">
+
+              <span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="gear" data-iconpos="notext" data-theme="d" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-gear ui-icon-shadow">&nbsp;</span></span></span></span></a>	
+
+              <div data-role="popup" id="action_12_popup" data-theme="a">
+	                <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+		                <li><a href="options.html">Close</a></li>
+	                </ul>
+              </div>
+              		          
+	      </li>
+
+	      <li data-theme="e" data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn">
+	      
+              <a href="#" class="ui-link-inherit" data-transition="slide">
+				          <h3 class="ui-li-heading">Each button is typically an anchor element, but can be a button element as well. </h3>
+				          <p class="ui-li-desc">Due June 12, 7:45PM</p>
+		          </a>
+		          
+              <a href="#action_12_popup" data-rel="popup" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c" aria-haspopup="true" aria-owns="#purchase">
+
+              <span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="gear" data-iconpos="notext" data-theme="d" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-gear ui-icon-shadow">&nbsp;</span></span></span></span></a>	
+
+              <div data-role="popup" id="action_12_popup" data-theme="a">
+	                <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+		                <li><a href="options.html">Close</a></li>
+	                </ul>
+              </div>
+              		          
+	      </li>
+	      
+	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn">
+	      
+              <a href="#" class="ui-link-inherit" data-transition="slide">
+				          <h3 class="ui-li-heading">H1 heading element but it's possible to use any heading level (H1-H6) to allow for semantic flexibility. </h3>
+				          <p class="ui-li-desc">Due June 12, 7:45PM</p>
+		          </a>
+		          
+              <a href="#action_12_popup" data-rel="popup" class="ui-li-link-alt ui-btn ui-btn-icon-notext ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="false" data-iconpos="notext" data-theme="c" aria-haspopup="true" aria-owns="#purchase">
+
+              <span class="ui-btn-inner"><span class="ui-btn-text"></span><span data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="gear" data-iconpos="notext" data-theme="d" title="" class="ui-btn ui-btn-up-d ui-shadow ui-btn-corner-all ui-btn-icon-notext"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text"></span><span class="ui-icon ui-icon-gear ui-icon-shadow">&nbsp;</span></span></span></span></a>	
+
+              <div data-role="popup" id="action_12_popup" data-theme="a">
+	                <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+		                <li><a href="options.html">Close</a></li>
+	                </ul>
+              </div>
+              		          
+	      </li>	      
+	      
+	      </ul>	      
+	      </div>
+	
+      </div>
+
+		</div>
+
+	</div>
+	
+<style>#footer i {font-size: 30px;}</style>
+<div data-role="footer" id="footer" data-id="footer" data-position="fixed">
+	<div data-role="navbar" >
+		<ul class="ui-grid-d">
+		
+      <li class="ui-block-a">
         <a href="profile.html">
-          <i class="icon-large icon-cog icon-white"></i>
-          <div class="tab-label">Account</div>
+        <i class="icon-cog"></i> 
         </a>
-      </li>  
-      <li class="tab-item">
-        <a href="deck.html">
-          <i class="icon-large icon-plane icon-white"></i>
-          <div class="tab-label">My Deck</div>
+      </li>		
+      <li class="ui-block-b">
+        <a href="airframes.html">
+        <i class="icon-plane"></i> 
         </a>
-      </li>
-      <li class="tab-item">
+      </li>		
+      <li class="ui-block-c">
         <a href="contacts.html">
-          <i class="icon-large icon-group icon-white"></i>
-          <div class="tab-label">Contacts</div>
+        <i class="icon-group"></i> 
         </a>
-      </li>
-      <li class="tab-item">
+      </li>		  
+      <li class="ui-block-d">
         <a href="actions.html">
-          <i class="icon-large icon-check icon-white"></i>
-          <div class="tab-label">Actions</div>
+        <i class="icon-check"></i> 
         </a>
-      </li>
-      <li class="tab-item">
-        <a href="">
-          <i class="icon-large icon-signout icon-white"></i>
-          <div class="tab-label">Logout</div>
+      </li>	 
+      <li class="ui-block-e">
+        <a href="login.html">
+        <i class="icon-signout"></i> 
         </a>
-      </li>
-    </ul>
-  </nav>
+      </li>	                     
+          
+		</ul>
+	</div><!-- /navbar -->
+</div>
 
-  </body>
+
+</div>
+</body>
 </html>

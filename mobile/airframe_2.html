@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Demos and Documentation</title>
+	
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.2.0.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/mobile.css" />
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.2.0.js"></script>
+	
+</head>
+<body>
+<div data-role="page" class="type-home" data-theme="b">
+
+  <div data-role="header"> 
+    <a href="airframes.html" data-theme="b" data-icon="back" data-transition="slide" data-direction="reverse">Back</a>
+    <h1>2011 Gulfstream G550</h1> 
+  </div> 
+  
+  <div align="center" style="overflow: hidden">
+    <img src="http://2.bp.blogspot.com/-gErTVEDlEqM/Ti0T_5IgtWI/AAAAAAAANqE/Cxd3bIYO8v0/s1600/Gulfstream+G550+by+jet+airplanes+%252812%2529.jpg" width="100%"/>
+  </div>
+  
+	<div data-role="content" class="ui-content" role="main">
+
+		<div class="content-primary">
+
+		  <h2 style="margin-top: 0px">2011 Gulfstream G550</h2> 
+		  
+      <a href="#popupMenu" data-rel="popup" data-role="button" style="float: right;">Send</a>
+		  <div data-role="popup" id="popupMenu" data-theme="a">
+				  <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="b">
+					  <li data-role="divider" data-theme="a">Send Spec</li>
+					  <li><a href="send_spec.html">To New Contact</a></li>
+					  <li><a href="send_to_existing.html">To Existing Contact</a></li>
+				  </ul>
+		  </div>  		  
+		  
+      <table style="text-align: left"  data-inline="true">
+
+		    <tbody>
+		    <tr>
+		      <th scope="row">Serial</th>
+		      <td>&nbsp;&nbsp;5693</td>
+		    </tr>
+		    <tr>
+		      <th scope="row">Reg</th>
+		      <td>&nbsp;&nbsp;N2345</td>
+		    </tr>		
+		    <tr>
+		      <th scope="row">Asking</th>
+		      <td>&nbsp;&nbsp;$56,233,000</td>
+		    </tr>				    
+		    </tbody>
+		    
+		  </table>
+
+      <div data-role="collapsible-set" data-inset="false">
+	
+	      <div data-role="collapsible" data-collapsed="true">
+	      <h3>Details</h3>
+	      <p>I'm the collapsible set content for section 2.</p>
+	      </div>
+	      	
+	      <div data-role="collapsible" data-collapsed="true">
+	      <h3>Leads</h3>
+			  <ul data-role="listview" data-filter-theme="d" data-theme="d" data-divider-theme="d" class="ui-listview"></ul>	      
+	      </div>
+	
+	      <div data-role="collapsible" data-collapsed="true">
+	      <h3>Actions</h3>
+			  <ul data-role="listview" data-filter-theme="d" data-theme="d" data-divider-theme="d" class="ui-listview"></ul>	      
+	      </div>
+	
+      </div>
+
+		</div>
+
+	</div>
+	
+<style>#footer i {font-size: 30px;}</style>
+<div data-role="footer" id="footer" data-id="footer" data-position="fixed">
+	<div data-role="navbar" >
+		<ul class="ui-grid-d">
+		
+      <li class="ui-block-a">
+        <a href="profile.html">
+        <i class="icon-cog"></i> 
+        </a>
+      </li>		
+      <li class="ui-block-b">
+        <a href="airframes.html">
+        <i class="icon-plane"></i> 
+        </a>
+      </li>		
+      <li class="ui-block-c">
+        <a href="contacts.html">
+        <i class="icon-group"></i> 
+        </a>
+      </li>		  
+      <li class="ui-block-d">
+        <a href="actions.html">
+        <i class="icon-check"></i> 
+        </a>
+      </li>	 
+      <li class="ui-block-e">
+        <a href="login.html">
+        <i class="icon-signout"></i> 
+        </a>
+      </li>	                     
+          
+		</ul>
+	</div><!-- /navbar -->
+</div>
+
+
+</div>
+</body>
+</html>

@@ -16,7 +16,7 @@
 <div data-role="page" class="type-home">
 
     <div data-role="header"> 
-      <h1>My Contacts</h1> 
+      <h1>My Deck</h1> 
       <a href="index.html" data-icon="add" class="ui-btn-right" data-theme="b">New</a>      
     </div> 
 
@@ -24,26 +24,50 @@
 
 		<div class="content-primary">
 		
-			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search contacts..." data-filter-theme="d" data-theme="d" data-divider-theme="d" class="ui-listview">
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Search aircraft..." data-filter-theme="d" data-theme="d" data-divider-theme="d" class="ui-listview">
       
+	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
+	      data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" 
+	      data-theme="c" 
+	      class="ui-btn ">
+
+              <a href="airframe_2.html" class="ui-link-inherit" data-transition="slide">
+				          <img src="http://jquerymobile.com/demos/1.2.0/docs/lists/images/album-bb.jpg" 
+				            class="ui-li-thumb">
+				          <h3 class="ui-li-heading">2011 Gulfstream G550</h3>
+				          <p class="ui-li-desc">6054 (CS-DKVG)</p>
+		          </a>
+
+	      </li>
 	      
 	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
 	      data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" 
 	      data-theme="c" 
 	      class="ui-btn ">
-	        <a href="index.html" class="ui-link-inherit">Ted Stevenson</a>
-	        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
-	      </li>	   
+
+              <a href="airframe.html" class="ui-link-inherit" data-transition="slide">
+				          <img src="http://jquerymobile.com/demos/1.2.0/docs/lists/images/album-bb.jpg" 
+				            class="ui-li-thumb">
+				          <h3 class="ui-li-heading">2004 Beechcraft King Air 350</h3>
+				          <p class="ui-li-desc">BB-1234 (N4234)</p>
+		          </a>
+
+	      </li>
 	      
 	      <li data-corners="false" data-shadow="false" data-iconshadow="true" 
 	      data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" 
 	      data-theme="c" 
 	      class="ui-btn ">
-	        <a href="index.html" class="ui-link-inherit">Caleb Booth</a>
-	        <span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>
-	      </li>	      
-	      
-    	      
+
+              <a href="airframe.html" class="ui-link-inherit" data-transition="slide">
+				          <img src="http://jquerymobile.com/demos/1.2.0/docs/lists/images/album-bb.jpg" 
+				            class="ui-li-thumb">
+				          <h3 class="ui-li-heading">1998 Dassault Falcon 50EX</h3>
+				          <p class="ui-li-desc">G234 </p>
+		          </a>
+
+	      </li>	
+	            	      
       </ul>
       
 		</div>
@@ -61,12 +85,12 @@
         </a>
       </li>		
       <li class="ui-block-b">
-        <a href="airframes.html">
+        <a href="airframes.html" class="ui-btn-active">
         <i class="icon-plane"></i> 
         </a>
       </li>		
       <li class="ui-block-c">
-        <a href="contacts.html" class="ui-btn-active">
+        <a href="contacts.html">
         <i class="icon-group"></i> 
         </a>
       </li>		  
