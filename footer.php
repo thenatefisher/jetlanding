@@ -1,5 +1,4 @@
-</div>
-</div>
+
 
 <div class="footer">
   <div class="container">
@@ -32,7 +31,7 @@
     
     <div class="row-fluid copyright">
       <div class="span12">
-        <h6>Copyright 2012, JetDeck Services, LLC</h6>
+        <h6>Copyright 2013, JetDeck Services, LLC</h6>
       </div>
     </div>  
     

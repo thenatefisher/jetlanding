@@ -72,21 +72,21 @@
                   <div class="span6 buttons-span">
                   
                     <div class="btn-group pull-right nav-buttons">
-                      <a class="btn btn-large" href="/signup.php">Get Started</a>
-                      <a class="btn btn-large" href="/#features">Features</a>
+                      <a class="btn btn" href="/signup.php">Get Started</a>
+                      <a class="btn btn" href="/#features">Features</a>
                     </div>
                     
                     <div class="mobile-buttons nav-buttons hide">
                       <br>
-                      <a class="btn btn-large" href="/signup.php">Get Started</a>
-                      <a class="btn btn-large" href="/#features">Features</a>
+                      <a class="btn btn" href="/signup.php">Get Started</a>
+                      <a class="btn btn" href="/#features">Features</a>
             
                     </div>
                                         
-                    <div class="pull-right login">
+                    <h3 class="pull-right login">
                       Already a member? 
                       <a href="http://app.jetdeck.co">Log In</a>
-                    </div>            
+                    </h3>            
                     
                   </div>
                 </div>

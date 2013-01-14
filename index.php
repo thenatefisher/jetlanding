@@ -1,290 +1,198 @@
 <?php require("header.php"); ?>
+
 <script>
 
-  var features = ['retail', 'stats', 'deck', 'spec'];
-  var currentFeature = 0;
-  var featureRotateTime = 5500;
-  var headlineRotateTime = 3500;
-  var featureTimeout = setTimeout('imageRotate()', featureRotateTime);
-  var headlineTimeout = setTimeout('headlineRotate()', headlineRotateTime);  
-  
-  $(function() {
+var features = ['retail', 'stats', 'deck', 'spec'];
+var currentFeature = 0;
+var featureRotateTime = 5500;
+var featureTimeout = setTimeout('imageRotate()', featureRotateTime);
 
+$(function() { 
 
-    $("#demo-cta").click(function() {
-      $("#signup-subheader h3").hide();
-      $("#demo").show();
-      $("#demo-submit").button("reset");
-      $(".screenshot").css("margin", "35px auto");
-    });
-    
-    $("#demo-submit").click(function() {
-    
-      // clear error messages
-      $(".error-msg").hide();
-      
-      // get form values
-      var email = $("input[name='email']").val();
-      var name = $("input[name='name']").val();
-    
-      // validation
-      if (!validated()) {
-      
-        $("#validation-error").show();
-        
-      } else {
-      
-        // show loading message and disabled button
-        $("#demo-submit").button("loading");
-          
-        // attempt send
-        $.ajax({
-          type: "POST",
-          url: "send.php",
-          data: {email: email, name: name}, 
-          timeout: 3000,
-          dataType: "text",
-          error: function() {
-          
-              // show error message
-              $("#send-error").show();
-              $("#demo-submit").hide(); 
-                       
-          },
-          success: function(data) {
-        
-            $("#demo-submit").button("reset");
-          
-            if (data == "ok") {
-            
-              // show success message
-              $("#demo").hide();
-              $("#confirmation, #confirmation h3").show();
-              $(".screenshot").css("margin", "35px auto");
-              
-            } else {
-            
-              // show error message
-              $("#send-error").show();
-              $("#demo-submit").hide();
-              
-            }
-            
-          }
-            
-        }); // end $.post()
-        
-      } // end validation
-      
-    }); // end submit button click
-    
+  imageRotate(); 
 
-    $(".text-rotate:first").show();
-    
+  $("#invite-cta").click(showInviteRequestField);
+  $("#invite-submit").click(showInviteSurvey);
+  $(".signup-survey button").click(showInviteConfirmation);
+
+});
+
+function showInviteConfirmation() {
+
+  $(".signup-survey").fadeOut(200, function(){
+    $(".signup-confirmation").fadeIn(300);
   });
-      
-  function validated() {
-  
-    var email = $("input[name='email']").val();
-    var name = $("input[name='name']").val();
-    
-    if (email == "" || name == "") return false;
-    
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;   
-     
-    return re.test(email);
-    
-  }
-  
-  function headlineRotate() {
-  
-    clearTimeout(headlineTimeout); 
-    
-    currentHeadline = $(".text-rotate:visible");
-    
-    if (currentHeadline.next().length > 0) {
-      currentHeadline.next().fadeIn();
-    } else {
-      $(".text-rotate:first").fadeIn();
-    }
-    currentHeadline.fadeOut();
-    
-    headlineTimeout = setTimeout('headlineRotate()', headlineRotateTime);
-    
-  }    
-      
-  function imageRotate() {
-    
-    clearTimeout(featureTimeout);
-    
-    currentFeature = (currentFeature == (features.length - 1)) ? 0 : currentFeature + 1;
 
-    $("#browser-chrome").after("<img class='rotate' src='img/rotator/" + features[currentFeature] + ".png' style='display: none; position:absolute'>");
-    $(".rotate:last").fadeOut('slow', function() { $(this).remove(); });
-    $(".rotate:first").fadeIn('slow');
-    
-    featureTimeout = setTimeout('imageRotate()', featureRotateTime);
-    
+  $("#hero-headline").fadeOut(200, function(){
+    $("#hero-headline h1").html("Thanks!");
+    $("#hero-headline").fadeIn(300);
+  });    
+
+}
+
+function showInviteSurvey() {
+
+  if (validated()) {
+
+    $(".signup-form").fadeOut(200, function(){
+      $(".signup-survey").fadeIn(300);
+    });
+
+    $("#hero-headline").fadeOut(200, function(){
+      $("#hero-headline h1").html("You're on the List!");
+      $("#hero-headline").fadeIn(300);
+    });      
+
+  } else {
+
+    $("#send-error").fadeIn(200);
+
   }
-  
+
+}
+
+function showInviteRequestField() {
+
+  $(".signup-intro").fadeOut(200, function(){
+    $(".signup-form").fadeIn(300);
+  });
+
+  $("#hero-headline").fadeOut(200, function(){
+    $("#hero-headline h1").html("Signup for an invite and be the first to try JetDeck");
+    $("#hero-headline").fadeIn(300);
+  });    
+
+}
+
+function validated() {
+
+  var email = $("input[name='email']").val();
+
+  if (email == "") return false;
+
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;   
+
+  return re.test(email);
+
+}
+
+function imageRotate() {
+
+  clearTimeout(featureTimeout);
+
+  currentFeature = (currentFeature == (features.length - 1)) ? 0 : currentFeature + 1;
+
+  $("#browser-chrome").after("<img class='rotate' src='img/rotator/" + features[currentFeature] + ".png' style='display: none; position:absolute'>");
+  $(".rotate:last").fadeOut('slow', function() { $(this).remove(); });
+  $(".rotate:first").fadeIn('slow');
+
+  featureTimeout = setTimeout('imageRotate()', featureRotateTime);
+
+}
+
 </script>
 
 <div class="row-fluid">
   <div class="span12">
 
-      <div class="alt-hero">
-      
+    <div class="alt-hero masthead">
+
+      <div class="row-fluid">
+
         <div id="hero-headline">
-        
-          <h1 id="headline-rotate">Sell More Aircraft,</h1>
-          
-          <div id="rotate-group">
-            <span class="text-rotate">&nbsp;Easier.</span>
-            <span class="text-rotate">&nbsp;Faster.</span>
-            <span class="text-rotate">&nbsp;Smarter.</span>
-          </div>
-          
-        </div>
-        
-        <div class="row-fluid">
-        <div class="span2"></div>
-        <div class="span8" id="signup-subheader">
-          <h3> <span class="jetdeck_word">JetDeck</span> is an inventory and contact manager for Aircraft Sales 
-          Professionals to act faster, work in teams and close 
-          more deals. <button class="btn btn-primary btn-large" id="demo-cta" style="margin-top: -5px"> <strong> <i class="icon-hand-right icon-white"></i> Try a Demo Now! </strong> </button></h3>
-          
-          <div id="demo" style="display: none">
-          
-              <h3>Sending an aircraft presentation can be this easy!</h3>  
-              
-              <h3>&nbsp;</h3>       
-               
-              <div class="span12 alert alert-error hide error-msg" style="display: none" id="validation-error">Please enter a name and valid email address.</div>
-              
-              <div class="span12 alert alert-warning hide error-msg" style="display: none" id="send-error">Sorry, we can't send to the address you entered. Try another recipient or  <br>
-              
-              <strong><a href="signup.php">Sign Up for The Real Thing!</a></strong></div>               
-              
-              <input type="text" name="name" style="width: 90%;" placeholder="Name">
-              <input type="text" name="email" style="width: 90%;" placeholder="Email">
-              
-              <button id="demo-submit" 
-                      style="width: 92%;"
-                      class="btn btn-primary btn-large" 
-                      onclick="return false" 
-                      data-loading-text="Sending Spec...">
-                      
-              <i class="icon-envelope-alt icon-large"></i> 
-              <strong> Send a Spec!</strong>
-              
-              </button>
-              
-          </div>	
 
-          <div id="confirmation" style="display: none">
-              <h3>Thanks! Now check your email on a desktop PC, mobile or tablet device to see how your customers will experience your aircraft. Like what you see? <a href="/signup.php" style="margin: 5px;"> <strong> Sign Up! </strong> </a> </h3>
-          </div>	
-                    			
+          <h1>Still sending aircraft specs as email attachments?</h1>
+
+        </div>        
+
+        <div class="span2 signup-intro"></div>
+
+        <div class="span8 signup-intro">
+
+          <div class="span7 invite-request-cta">
+            <h3>Use JetDeck to identify interested customers faster with real-time analytics for your listings.</h3>
+          </div>
+
+          <div class="span4 invite-request-cta">
+            <a class="btn" id="invite-cta"> Get an Invite! </a>
+            <br>
+            <div class="clearfix" style="height: 5px;"></div>
+            <span style="color: #ddd">Or</span> <a style="clear: both; color: white;" href="#">  Watch the Video  <i class=" icon-play-circle icon-white"></i></a>
+          </div>
         </div> 
-        
-      </div>
-      </div>
-      
-      <div class="screenshot"> 
-        <img src="img/rotator/browser.png" id="browser-chrome" style="position:absolute;">
-	      <img src="img/rotator/retail.png" class="rotate">
-	      <img src="img/rotator/shadow.png" style="position:absolute;">
-      </div>
-      
-      <a name="features"></a>
-      <div class="row-fluid clearfix">
-      <div class="span12 section-heading">
 
-      <h1>Features. <small>For Working Smarter.</small> </h1>
-      </div>
-      </div>
-                
-      <div class="row-fluid clearfix">
-      
-          <div class="feature-well span12">
-          
-            <div class="feature-sep span12" style="margin-left: 0px; padding-top: 30px">
-              <div class="span6">
-                <img src="/img/feature/spec.png" style="margin-top: 0px; margin-left: 30px;">
-              </div>                
-              <div class="span6" style="padding: 0px 30px; text-align: right;">
-                <h1>Beautiful, Personalized Presentation. Little Effort.</h1>
-                <h3><br></h3>
-                <h3>
-                Stop struggling with software or handling bulky hi-res photos over email. JetDeck delivers interactive, professional-looking specs, customized to each lead. </h3>
-              </div>
-            </div>  
-            
-            <div class="feature-sep span12" style="margin-left: 0px; padding: 30px">
-              <div class="span6">
-                <h1>React to Leads Faster</h1>
-                <h3><br></h3>
-                <h3>
-                Send aircraft presentations with just a few clicks, from anywhere. Being more responsive means closing more deals.</h3>
-              </div>
-              <div class="span6">
-                <img src="/img/feature/send.png" class="pull-right" style="border-radius: 6px 6px 0 0">
-              </div>            
-            </div>
-                        
-            <div class="feature-sep span12" style="margin-left: 0px; padding: 30px">
-              <div class="span6">
-                <img src="/img/feature/taglines.png" style="border-radius: 6px 6px 0 0">
-              </div>                
-              <div class="span6" style="text-align: right;">
-                <h1>Tailor Specs To Each Customer's Wants</h1>
-                <h3><br></h3>
-                <h3>
-                Easily modify the headlines and personal messages for each lead. JetDeck will save time and increase the quality of your customer interaction.
-                </h3>
-              </div>
-            </div>     
-            
-            <div class="feature-cta-sep span12" style="margin: 0px">
-     
-              <h2>Ready to Start Selling More Aircraft with JetDeck? <a href="/signup.php" class="btn btn-success btn-large"> <strong> Get an Invite! </strong> </a><h2>
+      </div> 
 
-            </div>
-                        
-            <div class="feature-sep span12" style="margin-left: 0px; padding: 30px;">
-              <div class="span6" >
-                <h1>Stay Organized, Find More Deals</h1>
-                <h3><br></h3>
-                <h3>JetDeck provides a clear picture of what aircraft are available and who is most interested. </h3>
-              </div>
-              <div class="span6">
-                <img src="/img/feature/deck.png" class="pull-right" style="border-radius: 6px 6px 0 0">
-              </div>            
-            </div>  
-            
-            <div class="span12" style="margin-left: 0px; padding-top: 30px;">
-              <div class="span6" id="mobile-feature">
-                <img src="/img/feature/mobile.png">
-              </div>                
-              <div class="span6" style="padding: 0px 30px; text-align: right;">
-                <h1>Optimized For Today's Mobile Customers</h1>
-                <h3><br></h3>
-                <h3>
-                Over half of your customers are already reading email on 
-                mobile devices. JetDeck automatically makes your aircraft look great on
-                PCs, smart phones and tablets.</h3>
-              </div>
-            </div>                           
-          
+      <div class="row-fluid hide signup-form">
+
+        <div class="span2"></div>
+
+        <div class="span8">
+
+          <div id="invite-submit-input" class="span9">
+            <input type="text" name="email" placeholder="Email" class="span12" style="">
+            <div class="hide error-msg" id="send-error" style="margin-top: 3px;">Sorry, we can't send to the address you entered.</div>
           </div>
-          
-      </div>                        
-      
-           
-      <br><br><br>
-                  
+
+          <button id="invite-submit" class="btn btn-primary span3" 
+          onclick="return false" data-loading-text="Submitting...">Submit</button>
+
+        </div>
+
+      </div>	
+
+      <div class="signup-survey hide">
+
+        <div class="span1"></div>
+        <div class="span10"><h3>Great, you're in line to try JetDeck. Which feature are you most interested in? </h3></div>
+
+        <div class="clearfix"></div><br><br>
+
+        <div class="span2"></div>
+        <div class="span8">
+
+          <div class="row">
+
+            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px; margin-left: -15px;" onclick="return false">Traffic Analytics For My Aircraft Listings</button>
+
+            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px;" onclick="return false">A CRM that links My Leads to My Aircraft</button>
+
+            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px;" onclick="return false">Spec Sheets that Look Great on Customer Smartphones</button>
+
+          </div>
+        </div> 
+
+      </div>  
+
+      <div class="signup-confirmation hide">
+        <div class="span2"></div>
+        <div class="span8">        
+        <h3>We'll let you know as soon as space is available in the trial. In the meantime, you can <a href="#" style="color: white;"> Watch the Video</a> or learn about all of the <a href="#" style="color: white;">features</a>. </h3>
+
+          </div>
+        </div>       
+      </div>	
+
+    </div>
+
+
+
   </div>
 </div>
+
+<div class="screenshot"> 
+  <img src="img/rotator/browser.png" id="browser-chrome" style="position:absolute;">
+  <img src="img/rotator/retail.png" class="rotate">
+  <img src="img/rotator/shadow.png" style="position:absolute;">
+</div>
+
+</div>
+</div>
+
+</div> <!-- in header -->
+</div> <!-- in header -->
+
+
 
 <img class='hide' src='img/rotator/spec.png'/>
 <img class='hide' src='img/rotator/deck.png'/>
