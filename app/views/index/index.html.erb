@@ -127,7 +127,7 @@ function imageRotate() {
 
   currentFeature = (currentFeature == (features.length - 1)) ? 0 : currentFeature + 1;
 
-  $("#browser-chrome").after("<img class='rotate' src='img/rotator/" + features[currentFeature] + ".png' style='display: none; position:absolute'>");
+  $("#browser-chrome").after("<img class='rotate' src='assets/rotator/" + features[currentFeature] + ".png' style='display: none; position:absolute'>");
   $(".rotate:last").fadeOut('slow', function() { $(this).remove(); });
   $(".rotate:first").fadeIn('slow');
 
@@ -227,16 +227,16 @@ function imageRotate() {
 </div> <!-- row fluid -->
 
 <div class="screenshot"> 
-  <img src="img/rotator/browser.png" id="browser-chrome" style="position:absolute;">
-  <img src="img/rotator/retail.png" class="rotate">
-  <img src="img/rotator/shadow.png" style="position:absolute;">
+  <img src="<%= asset_path "rotator/browser.png" %>" id="browser-chrome" style="position:absolute;">
+  <img src="<%= asset_path "rotator/retail.png" %>" class="rotate">
+  <img src="<%= asset_path "rotator/shadow.png" %>" style="position:absolute;">
 </div>
 
 </div> <!-- in header -->
 </div> <!-- in header -->
 
 <!-- image preloaders -->
-<img class='hide' src='img/rotator/spec.png'/>
-<img class='hide' src='img/rotator/deck.png'/>
-<img class='hide' src='img/rotator/retail.png'/>
-<img class='hide' src='img/rotator/stats.png'/>
+<img class='hide' src='<%= asset_path "rotator/spec.png" %>'/>
+<img class='hide' src='<%= asset_path "rotator/deck.png" %>'/>
+<img class='hide' src='<%= asset_path "rotator/retail.png" %>'/>
+<img class='hide' src='<%= asset_path "rotator/stats.png" %>'/>

@@ -1,0 +1,151 @@
+@import "twitter/bootstrap/variables";
+@import "twitter/bootstrap/mixins";
+@import "components/colors";
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .screenshot {
+    margin: 60px auto 30px;
+    width: 720px;
+    height: 300px;
+  }
+
+  .alt-hero h1 {
+    font-size: 50px;
+  }
+
+  .alt-hero h3 {
+    font-size: 20px;
+    color: #9999aa;
+    line-height: 35px;
+  }
+
+  .login {
+    margin-right: 10px;
+  }
+
+  #hero-headline {
+    width: 600px;
+  }
+  
+  #rotate-group {
+    font-size: 50px;
+  }
+  
+  .feature-well h1 {
+    font-size: 20px; 
+    line-height: 30px;
+  }
+  
+  .feature-well h3 { 
+    font-size: 20px; 
+    line-height: 30px;
+  }
+
+
+}
+ 
+
+
+@media (max-width: 767px) {
+  
+  .logo-span { float: left; }
+  
+  .buttons-span { float: right; }
+  
+  .nav-buttons { margin-right: 10px;}
+  
+  .logo { margin-left: 10px;}
+  
+  .screenshot {
+    width: 600px;
+    height: 260px;
+  }
+
+  #signup-subheader { width: 570px; margin: 0px auto;}
+  
+  .alt-hero h1 {
+    font-size: 40px;
+  }
+
+  .login {
+    margin-right: 20px;
+  }
+
+  #hero-headline {
+    width: 500px;
+  }
+  
+  #rotate-group {
+    font-size: 40px;
+  }
+
+  .feature-sep .span6 {
+    text-align: center;
+  }
+
+  .feature-well img {
+    float: none;
+    margin: 20px auto;
+  }
+  
+  .feature-well h1 {
+    text-align: center;
+    margin: 0px;
+  }
+  
+  .feature-cta-sep a { margin: 20px auto; }
+  
+  #mobile-feature {
+    text-align: center;
+  }
+  
+  #mobile-feature img {
+    margin: 20px auto;
+  }
+   
+  .feature-well h3 { 
+    text-align: center;
+    margin: 0px;
+  }
+  
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .logo-span { width: 100%; .clearfix(); text-align: center;  }
+  
+  .login, .buttons-span, .nav-buttons { float: none; width: 100%; .clearfix(); text-align: center; margin: 10px auto;}
+
+  .buttons-span .btn-group { display: none; }
+
+  .mobile-buttons { display: inline; margin-top: 20px; }
+  
+  .screenshot {
+    width: 400px;
+    height: 120px;
+  }
+  
+  #hero-headline {
+    .clearfix();
+    width: 100%;
+    text-align: center;
+  }
+  
+  #headline-rotate {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #rotate-group {
+    .clearfix();
+    width: 100%;
+    text-align: center;
+  }  
+  
+  #signup-subheader { width: 400px;}
+
+}
