@@ -34,4 +34,7 @@ Jetlanding::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  config.font_awesome = false
+
 end

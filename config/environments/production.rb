@@ -64,4 +64,12 @@ Jetlanding::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # mix panel
+  config.mixpanel_token = "9695ef68b585928e28bca9b8da50eb31"
+
+  config.action_mailer.default_url_options = { :host => "app.jetdeck.co" }
+
+  config.font_awesome = true
+    
 end
