@@ -23,6 +23,7 @@
 <link rel="icon" href="/favicon.png" type="image/gif"/>
 
 <link rel="stylesheet/less" type="text/css" href="/css/styles.less">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
 	<link rel="stylesheet" href="css/styles/ie.css" type="text/css" />
 	<link rel="stylesheet" href="css/styles/ieCss3.css" type="text/css" media="screen" />
@@ -33,6 +34,7 @@
 <script src="/js/jquery.easing.js" type="text/javascript"></script>
 <script src="/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/js/less.js" type="text/javascript"></script>
+<script src="/js/mailcheck.min.js"></script>
 <!--[if lt IE 9]>
 <script src="/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -72,13 +74,15 @@
                   <div class="span6 buttons-span">
                   
                     <div class="btn-group pull-right nav-buttons">
-                      <a class="btn btn" href="/signup.php">Get Started</a>
+                      <a class="btn btn" href="#">Get in Touch</a>
+                      <a class="btn btn" href="#">Share</a>
                       <a class="btn btn" href="/#features">Features</a>
                     </div>
                     
                     <div class="mobile-buttons nav-buttons hide">
                       <br>
-                      <a class="btn btn" href="/signup.php">Get Started</a>
+                      <a class="btn btn" href="#">Get in Touch</a>
+                      <a class="btn btn" href="#">Share</a>
                       <a class="btn btn" href="/#features">Features</a>
             
                     </div>

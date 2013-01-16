@@ -9,13 +9,57 @@ var featureTimeout = setTimeout('imageRotate()', featureRotateTime);
 
 $(function() { 
 
+  // show first image
   imageRotate(); 
 
+  // setup buttons
   $("#invite-cta").click(showInviteRequestField);
   $("#invite-submit").click(showInviteSurvey);
   $(".signup-survey button").click(showInviteConfirmation);
 
+  // mailcheck
+  $("input[name='email']").on('blur', function() {
+    $(this).mailcheck({
+    
+      topLevelDomains: ["com", "net", "org", "aero"],
+
+      // when there is a suggestion...
+      suggested: function(element, suggestion) {
+      
+        // if entry is available and passes simple regex
+        if (validated()) {
+        
+          // show suggestions
+          var suggestion_msg;
+          suggestion_msg = "Did you mean ";
+          suggestion_msg += "<a href='#' id='mailcheck-suggestion'>" + suggestion.full + "</a>?";
+
+          $("#send-error").removeClass("error");
+          $("#send-error").html(suggestion_msg);
+          $("#send-error").slideDown(200);          
+        
+        }
+        
+      }
+      
+    });
+    
+  });
+
+  // handle mailcheck suggestion link click
+  $("body").on("click", "#mailcheck-suggestion", function() {
+     
+      // set the email field to the suggestion
+      var suggestion = $(this).html();
+      $("input[name='email']").val(suggestion);
+    
+      // hide suggestion message
+      $("#send-error").slideUp(200);
+
+  });  
+  
 });
+
 
 function showInviteConfirmation() {
 
@@ -45,7 +89,9 @@ function showInviteSurvey() {
 
   } else {
 
-    $("#send-error").fadeIn(200);
+    $("#send-error").addClass("error");
+    $("#send-error").html("Sorry, we can't send to the address you entered.");
+    $("#send-error").slideDown(200);
 
   }
 
@@ -101,7 +147,7 @@ function imageRotate() {
 
         <div id="hero-headline">
 
-          <h1>Still sending aircraft specs as email attachments?</h1>
+          <h1>Still sending specs as email attachments?</h1>
 
         </div>        
 
@@ -110,7 +156,7 @@ function imageRotate() {
         <div class="span8 signup-intro">
 
           <div class="span7 invite-request-cta">
-            <h3>Use JetDeck to identify interested customers faster with real-time analytics for your listings.</h3>
+            <h3>JetDeck converts your specs into links that open on smartphones and can be tracked in real time.</h3>
           </div>
 
           <div class="span4 invite-request-cta">
@@ -130,8 +176,8 @@ function imageRotate() {
         <div class="span8">
 
           <div id="invite-submit-input" class="span9">
-            <input type="text" name="email" placeholder="Email" class="span12" style="">
-            <div class="hide error-msg" id="send-error" style="margin-top: 3px;">Sorry, we can't send to the address you entered.</div>
+            <input type="text" name="email" placeholder="Email" class="span12" id="email">
+            <div class="hide" id="send-error" style="margin-top: 5px; text-align: right"></div>
           </div>
 
           <button id="invite-submit" class="btn btn-primary span3" 
@@ -144,7 +190,7 @@ function imageRotate() {
       <div class="signup-survey hide">
 
         <div class="span1"></div>
-        <div class="span10"><h3>Great, you're in line to try JetDeck. Which feature are you most interested in? </h3></div>
+        <div class="span10"><h3>Now that you're in line to try JetDeck, which feature are you most interested in? </h3></div>
 
         <div class="clearfix"></div><br><br>
 
@@ -153,11 +199,14 @@ function imageRotate() {
 
           <div class="row">
 
-            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px; margin-left: -15px;" onclick="return false">Traffic Analytics For My Aircraft Listings</button>
+            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px; margin-left: -15px; line-height: 25px" onclick="return false">
+              Customer Activity Data Plots</button>
 
-            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px;" onclick="return false">A CRM that links My Leads to My Aircraft</button>
+            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px; line-height: 25px" onclick="return false">
+              A CRM that Understands Aircraft Brokerage</button>
 
-            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px;" onclick="return false">Spec Sheets that Look Great on Customer Smartphones</button>
+            <button class="btn btn-primary span4" style="text-shadow: none; font-weight: bold; font-size: 14px; line-height: 25px" onclick="return false">
+              Spec Sheets that Look Great on Smartphones</button>
 
           </div>
         </div> 
@@ -165,20 +214,18 @@ function imageRotate() {
       </div>  
 
       <div class="signup-confirmation hide">
-        <div class="span2"></div>
-        <div class="span8">        
-        <h3>We'll let you know as soon as space is available in the trial. In the meantime, you can <a href="#" style="color: white;"> Watch the Video</a> or learn about all of the <a href="#" style="color: white;">features</a>. </h3>
-
+          <div class="span2"></div>
+          <div class="span8">        
+          <h3>We'll let you know as soon as space is available in the trial. In the meantime,   
+            <a href="#" style="color: white;">tweet about JetDeck</a> or email this signup to <a href="#" style="color: white;">a colleague</a>. </h3>
           </div>
-        </div>       
-      </div>	
+      </div>  
 
-    </div>
+    </div>	<!-- alt-hero masthead -->
 
+  </div>  <!-- span12 -->
 
-
-  </div>
-</div>
+</div> <!-- row fluid -->
 
 <div class="screenshot"> 
   <img src="img/rotator/browser.png" id="browser-chrome" style="position:absolute;">
@@ -186,14 +233,10 @@ function imageRotate() {
   <img src="img/rotator/shadow.png" style="position:absolute;">
 </div>
 
-</div>
-</div>
-
 </div> <!-- in header -->
 </div> <!-- in header -->
 
-
-
+<!-- image preloaders -->
 <img class='hide' src='img/rotator/spec.png'/>
 <img class='hide' src='img/rotator/deck.png'/>
 <img class='hide' src='img/rotator/retail.png'/>

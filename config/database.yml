@@ -1,0 +1,17 @@
+# And be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+
+development:
+  adapter: postgresql
+  database: jetdeck_development
+  username: jetdeck
+  password: jetdeck
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  database: jetdeck_test
+  username: jetdeck
+  password: jetdeck
+  timeout: 5000
+

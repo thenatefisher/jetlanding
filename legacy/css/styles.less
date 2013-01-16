@@ -1,12 +1,48 @@
 @import "less/bootstrap.less";
 @import "less/responsive.less";
 
-@font-face {
+/* COLOR SCHEME */
+/* http://colorschemedesigner.com/#3z31ArXE8NKOc */
+
+/* blue */
+@primary-1: #2476BF; /* primary */
+@primary-2: #3B5873; /* light shadow */
+@primary-3: #032E55; /* dark shadow */
+@primary-4: #7CBAF2; /* light highlight */
+@primary-5: #BBD8F2; /* dark highlight */
+
+/* orange light */
+@secondary-a-1: #FFB220; 
+@secondary-a-2: #9A7E49; 
+@secondary-a-3: #714B03; 
+@secondary-a-4: #FFD179; 
+@secondary-a-5: #FFE9C1;
+
+/* orange dark */
+@secondary-b-1: #FF9120; 
+@secondary-b-2: #9A7249; 
+@secondary-b-3: #713B03; 
+@secondary-b-4: #FFBD79; 
+@secondary-b-5: #FFE0C1; 
+
+@errorColor: #9d261d;
+@placeholderText: @secondary-a-2;
+
+/* fonts */
+.headline-font {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans'), url(/css/font/opensans.woff) format('woff');
 }
+
+
+
+
+
+
+
+
+
+
 
 html, body { height:100%; }
 
@@ -24,9 +60,8 @@ body {
   padding: 0;
 }
 
-.error-msg {
-  color: #9d261d;
-  magin-top: 30px;
+.error {
+  color: @errorColor;
 }
 
 .rounded-corners (@radius: 5px) {
@@ -37,20 +72,21 @@ body {
 
 h1 {
 
-  font-family: "Open Sans", Helvetica, sans-serif;
+  .headline-font;
   font-weight: 300;
 
   text-rendering: optimizelegibility;
   text-shadow: 0 1px 0 #3a283a;  
   font-size: 45px;
 
-  color: #FFFFFF;
+  color: white;
   line-height: 1;
   letter-spacing: -2px; 
   text-align: center;
   margin: 20px auto;
   width: 900px;
   .clearfix();
+
 }
 
 h3 {
@@ -64,12 +100,17 @@ h3 {
 
 
 
+input[type=text] {
+  background: @secondary-a-5;
+  color: @primary-3;
+}
+
 
 .sweatband { 
   width: 100%; 
   position: absolute; 
   top: 0;
-  background: #ff5d0d;
+  background: @secondary-a-1;
   margin: 0;
   padding: 0;
   height: 4px;
@@ -84,13 +125,35 @@ h3 {
 
 .nav-buttons { margin-right: 0px; }
 
+.login {
+  text-align: right;
+  font-size: 14px;
+  color: #d9edf7;
+  line-height: 20px;
+  clear: right;
+  margin-top: 10px;
+}
 
+.login a {
+  color: white;
+}
 
+.masthead {
+  .clearfix;
+  margin-top: 40px; 
+  text-align: center;
+}
+
+.screenshot {
+  margin: 60px auto;
+  margin-bottom: 0px;
+  height: 355px;
+  width: 867px;
+  position: relative;
+}
 
 
 /* footer */
-
-
 .footer { 
   width: 100%; 
   background: url(/img/bg/dots.png) repeat;
@@ -133,89 +196,26 @@ h3 {
 
 
 
-.screenshot {
-  margin: 60px auto;
-  margin-bottom: 0px;
-  height: 355px;
-  width: 867px;
-  position: relative;
-}
-
-
-.login {
-  text-align: right;
-  font-size: 14px;
-  color: #222;
-  line-height: 20px;
-  clear: right;
-  margin-top: 10px;
-}
-
-.login a {
-  color: #CCC;
-}
-
-.feature-section {
-  margin-top: 50px;
-  .center-block();
-  text-align: center;
-}
 
 
 
 
 
-/* button */
 
-a.btn:hover {
-  color: #3a283a;
+/* mastehead button */
+.masthead .btn:hover {
+  color: #032E55;
   text-decoration: none;
-  background-color: #f35000;
-  *background-color: #d9d9d9;
+  background-color: @secondary-b-1;
+  *background-color:@secondary-b-1;
   /* Buttons in IE7 don't get borders, so darken on hover */
-
   -webkit-transition: background-position 0.1s linear;
   -moz-transition: background-position 0.1s linear;
   -o-transition: background-position 0.1s linear;
   transition: background-position 0.1s linear;
-}
-
-.btn:focus {
-  outline: thin dotted #333333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-.masthead .btn {
-  color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #fa5808;
-  background-image: -moz-linear-gradient(top, #ff5d0d, #f35000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff5d0d), to(#f35000));
-  background-image: -webkit-linear-gradient(top, #ff5d0d, #f35000);
-  background-image: -o-linear-gradient(top, #ff5d0d, #f35000);
-  background-image: linear-gradient(to bottom, #ff5d0d, #f35000);
-  background-repeat: repeat-x;
-  border-color: #f35000 #f35000 #a63700;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #f35000;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);  
-  padding: 14px 24px;
-  font-size: 24px;
-  font-weight: 200;
-  color: white;
-  /* redeclare to override the `.jumbotron a` */
-  font-family: "Open Sans", Helvetica, sans-serif;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.6);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.6);
-}
-
-.masthead .btn:hover {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);  
 }
 
 .masthead .btn:active {
@@ -224,18 +224,44 @@ a.btn:hover {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-
-
-
-#invite-submit {
-
+.masthead .btn:focus {
+  outline: thin dotted #333333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
+
+.masthead .btn {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: @secondary-a-1;
+  background-image: -moz-linear-gradient(top, @secondary-a-1, @secondary-b-1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@secondary-a-1), to(@secondary-b-1));
+  background-image: -webkit-linear-gradient(top, @secondary-a-1, @secondary-b-1);
+  background-image: -o-linear-gradient(top, @secondary-a-1, @secondary-b-1);
+  background-image: linear-gradient(to bottom, @secondary-a-1, @secondary-b-1);
+  background-repeat: repeat-x;
+  /*border-color: #FFA700 @secondary-b-1 #a63700;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*/
+  *background-color: @secondary-b-1;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);  
+  padding: 14px 24px;
+  .headline-font;
+  font-size: 24px;
+  font-weight: 100;
+    color: white;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
 #invite-submit-input {
   padding: 6px; 
   background: white; 
   border: 1px solid #ccc; 
   .rounded-corners()
 }
+
 #invite-submit-input input {
   margin: 0px; height: 34px;
   font-size: 23px;
@@ -244,21 +270,17 @@ a.btn:hover {
   line-height: 27px;
 }
 
-#mc_embed_signup h3 {
-  margin-bottom: 20px;
-}
 
 
 
-.masthead {
-  .clearfix;
-  margin-top: 40px; 
+
+/* features page */
+
+.feature-section {
+  margin-top: 50px;
+  .center-block();
   text-align: center;
 }
-
-
-
-
 
 #bullets {
   background: #EEEEEE; 
