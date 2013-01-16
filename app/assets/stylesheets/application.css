@@ -6,6 +6,5 @@
  *= require components/masthead 
  *= require components/features 
  *= require components/media_default
- *= require components/media_overrides
  *= require_self
 */
