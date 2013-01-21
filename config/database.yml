@@ -3,14 +3,14 @@
 
 development:
   adapter: postgresql
-  database: jetdeck_development
+  database: jetlanding_development
   username: jetdeck
   password: jetdeck
   timeout: 5000
 
 test:
   adapter: postgresql
-  database: jetdeck_test
+  database: jetlanding_test
   username: jetdeck
   password: jetdeck
   timeout: 5000

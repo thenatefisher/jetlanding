@@ -8,8 +8,24 @@
   text-align: center;
 }
 
-.masthead .btn:hover {
-  color: #032E55;
+
+.masthead h1 {
+  .headline-font;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+  text-shadow: 0 1px 0 #3a283a;  
+  font-size: 45px;
+  color: white;
+  line-height: 1;
+  letter-spacing: -2px; 
+  text-align: center;
+  margin: 20px auto;
+  width: 900px;
+  .clearfix();
+}
+
+.btn-mast:hover, .masthead .btn:hover {
+  color: @primary-2;
   text-decoration: none;
   background-color: @secondary-b-1;
   *background-color:@secondary-b-1;
@@ -23,19 +39,19 @@
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);  
 }
 
-.masthead .btn:active {
+.btn-mast:active, .masthead .btn:active {
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.masthead .btn:focus {
+.btn-mast:focus, .masthead .btn:focus {
   outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-.masthead .btn {
+.btn-mast, .masthead .btn {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: @secondary-a-1;

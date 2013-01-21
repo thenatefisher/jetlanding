@@ -2,6 +2,7 @@
 @import "twitter/bootstrap/mixins";
 @import "components/colors";
 
+@static-width: 1000px;
 
 html, body { height:100%; }
 
@@ -10,9 +11,11 @@ body {
 	text-align: left;
 	margin: 0;
 	padding: 0;
+  min-width: @static-width;
 }
 
 .background {
+  min-width: @static-width;
   width: 100%; 
   background: url(<%= asset_path "B787_BG.png" %>) repeat;
   margin: 0;
@@ -22,28 +25,14 @@ body {
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);    
 }
 
+.container {min-width: @static-width;}
+
 .error {
   color: @errorColor;
 }
 
-
-h1 {
-
-  .headline-font;
-  font-weight: 300;
-
-  text-rendering: optimizelegibility;
-  text-shadow: 0 1px 0 #3a283a;  
-  font-size: 45px;
-
-  color: white;
-  line-height: 1;
-  letter-spacing: -2px; 
-  text-align: center;
-  margin: 20px auto;
-  width: 900px;
-  .clearfix();
-
+h1 {   
+.headline-font;
 }
 
 h3 {
@@ -61,6 +50,7 @@ input[type=text] {
 }
 
 .sweatband { 
+  min-width: @static-width;
   width: 100%; 
   position: absolute; 
   top: 0;
@@ -86,6 +76,7 @@ input[type=text] {
   line-height: 20px;
   clear: right;
   margin-top: 10px;
+  margin-right: 10px;
 }
 
 .login a {
@@ -94,7 +85,25 @@ input[type=text] {
 
 .screenshot {
   margin: 0px auto;
-  margin-top: -230px;
+  margin-top: -200px;
   position: absolute;
-  margin-left: -45px;
+  margin-left: -135px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: @secondary-b-5;
+}
+
+#mailcheck-suggestion {
+  color: @primary-1;  
+}
+
+#mailcheck-suggestion:hover {
+  text-decoration: none;
+  color: @primary-2;
 }

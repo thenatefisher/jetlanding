@@ -3,8 +3,8 @@
  *= require components/fontawesome
  *= require components/footer 
  *= require components/navbar 
- *= require components/masthead 
  *= require components/features 
+ *= require components/masthead  
  *= require components/media_default
  *= require_self
 */

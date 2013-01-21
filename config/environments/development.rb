@@ -38,7 +38,7 @@ Jetlanding::Application.configure do
   # Actually send emails in dev mode!!
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => "localhost:3000" }
+  config.action_mailer.default_url_options = { :host => "192.168.2.160:3000" }
   
   # mix panel
   config.mixpanel_token = "9695ef68b585928e28bca9b8da50eb31"

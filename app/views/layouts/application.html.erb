@@ -21,6 +21,7 @@
 	<meta name="description" content="An Aircraft Brokerage Tool for Professionals. Trading Jets Made Simple" />
 	<meta name="keywords" content="brokerage, aircraft, jet, planefax, sale, controller, trade-a-plane" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
 
 	<title>JetDeck.co | Aircraft Broker Tools </title>
 
@@ -47,4 +48,15 @@
 	<%= render "layouts/partials/footer" %>
 
 </body>
+
+<% if !@user.blank? && Rails.env != "test" %>
+<script>
+$(function() {
+    mixpanel.people.identify("<%= @user.token %>");    
+    mixpanel.identify("<%= @user.token %>");
+    mixpanel.name_tag("<%= @user.email %>");
+});
+</script>
+<% end %>
+
 </html>

@@ -1,18 +1,11 @@
 
-var features = ['retail', 'stats', 'deck', 'spec'];
-var currentFeature = 0;
-var featureRotateTime = 5500;
-//var featureTimeout = setTimeout('imageRotate()', featureRotateTime);
 
 $(function() { 
-
-  // show first image
-  //imageRotate(); 
 
   // setup buttons
   $("#invite-cta").click(showInviteRequestField);
   $("#invite-submit").click(showInviteSurvey);
-  $(".signup-survey button").click(showInviteConfirmation);
+  $(".signup-survey button").click(function(e){showInviteConfirmation(e);});
 
   // mailcheck
   $("input[name='email']").on('blur', function() {
@@ -58,7 +51,10 @@ $(function() {
 });
 
 
-function showInviteConfirmation() {
+function showInviteConfirmation(e) {
+
+  element = (e.target) ? e.target : e.currentTarget
+  mixpanel.track("Survey Response Entered", {"value": $(element).html() })
 
   $(".signup-survey").fadeOut(200, function(){
     $(".signup-confirmation").fadeIn(300);
@@ -75,6 +71,19 @@ function showInviteSurvey() {
 
   if (validated()) {
 
+    var email = $("input[name='email']").val();
+
+    mixpanel.track("Entered Email", {"valid": "true"});
+    mixpanel.name_tag(email);  
+
+    $.post("/r", {email: email }, function(data){
+
+      mixpanel.people.identify(data.token);    
+      
+      if (data.new) { mixpanel.alias(data.token); }
+         
+    }, 'json');
+
     $(".signup-form").fadeOut(200, function(){
       $(".signup-survey").fadeIn(300);
     });
@@ -86,6 +95,8 @@ function showInviteSurvey() {
 
   } else {
 
+    mixpanel.track("Entered Email", {"valid": "false"});
+
     $("#send-error").addClass("error");
     $("#send-error").html("Sorry, we can't send to the address you entered.");
     $("#send-error").slideDown(200);
@@ -95,6 +106,8 @@ function showInviteSurvey() {
 }
 
 function showInviteRequestField() {
+
+  mixpanel.track("Clicked Invite Request");
 
   $(".signup-intro").fadeOut(200, function(){
     $(".signup-form").fadeIn(300);
@@ -110,25 +123,11 @@ function showInviteRequestField() {
 function validated() {
 
   var email = $("input[name='email']").val();
-
   if (email == "") return false;
-
+  
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;   
-
+  
   return re.test(email);
 
 }
 
-function imageRotate() {
-
-  clearTimeout(featureTimeout);
-
-  currentFeature = (currentFeature == (features.length - 1)) ? 0 : currentFeature + 1;
-
-  $("#browser-chrome").after("<img class='rotate' src='assets/rotator/" + features[currentFeature] + ".png' style='display: none; position:absolute'>");
-  $(".rotate:last").fadeOut('slow', function() { $(this).remove(); });
-  $(".rotate:first").fadeIn('slow');
-
-  featureTimeout = setTimeout('imageRotate()', featureRotateTime);
-
-}

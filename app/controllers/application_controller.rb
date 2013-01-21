@@ -1,7 +1,14 @@
 class ApplicationController < ActionController::Base
+  
   protect_from_forgery
 
   include ActionView::Helpers::SanitizeHelper
+    
+  def sanitize_params
+  
+    sanitize_array(params) if !params.blank?
+    
+  end
 
   def sanitize_array(arr)
 
