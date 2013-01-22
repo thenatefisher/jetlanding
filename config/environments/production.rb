@@ -28,7 +28,7 @@ Jetlanding::Application.configure do
   config.active_support.deprecation = :notify
 
   # mix panel
-  config.mixpanel_token = "9695ef68b585928e28bca9b8da50eb31"
+  config.mixpanel_token = "b3dba5a4a7428924b5f9684309b94038"
 
   config.action_mailer.default_url_options = { :host => "jetdeck.co" }
 

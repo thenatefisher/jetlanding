@@ -19,7 +19,8 @@ class IndexController < ApplicationController
                 "$set" => {
                     "$email" => @user.email,
                     "source" => @user.source,
-                    "requested_at" => Time.now
+                    "requested_at" => Time.now,
+                    "user_token" => @user.token
                 },
                 "$token" => Jetlanding::Application.config.mixpanel_token,
                 "$distinct_id" => @user.token,
@@ -58,7 +59,8 @@ class IndexController < ApplicationController
 			        "$email" => @user.email,
 			        "phone" => @user.phone,
 			        "source" => @user.source,
-			        "sent" => @user.sent
+			        "sent" => @user.sent,
+                    "user_token" => @user.token
 			    },
 			    "$token" => Jetlanding::Application.config.mixpanel_token,
 			    "$distinct_id" => @user.token,
@@ -111,7 +113,8 @@ class IndexController < ApplicationController
 			        "$email" => @user.email,
 			        "phone" => @user.phone,
 			        "source" => @user.source,
-			        "sent" => @user.sent			        
+			        "sent" => @user.sent,
+                    "user_token" => @user.token	        
 			    },
 			    "$token" => Jetlanding::Application.config.mixpanel_token,
 			    "$distinct_id" => @user.token,
