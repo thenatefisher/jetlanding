@@ -54,7 +54,7 @@ class IndexController < ApplicationController
 			# register person
 			MixPanel.people({
 			    "$set" => {
-			        "$name" => @user.name,
+			        "$name" => @user.fullname,
 			        "company" => @user.company,
 			        "$email" => @user.email,
 			        "phone" => @user.phone,
@@ -108,7 +108,7 @@ class IndexController < ApplicationController
 			# register person
 			MixPanel.people({
 			    "$set" => {
-			        "$name" => @user.name,
+			        "$name" => @user.fullname,
 			        "company" => @user.company,
 			        "$email" => @user.email,
 			        "phone" => @user.phone,

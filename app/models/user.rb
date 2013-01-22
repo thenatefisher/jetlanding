@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  attr_accessible :name, :email, :company, :phone, :source
+  attr_accessible :first, :email, :company, :phone, :source, :fullname
   
   before_create { set_defaults() }
   before_save { update_mp() }
@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
 
     # generate token
     generate_token(:token)
+
+    update_mp();
     
   end
   
@@ -19,6 +21,33 @@ class User < ActiveRecord::Base
   end
 
   def update_mp
+      MixPanel.people({
+          "$set" => {
+              "$name" => self.fullname,
+              "$first_name" => self.first,
+              "company" => self.company,
+              "$email" => self.email,
+              "phone" => self.phone,
+              "source" => self.source,
+              "sent" => self.sent,
+              "user_token" => self.token         
+          },
+          "$token" => Jetlanding::Application.config.mixpanel_token,
+          "$distinct_id" => self.token
+      })    
   end
 
 end
+
+class MixPanel
+
+  def self.people(properties={})
+    return false if !properties.has_key?("$token")
+
+    data = ActiveSupport::Base64.encode64s(JSON.generate(properties))
+    request = "http://api.mixpanel.com/engage/?data=#{data}"
+
+    `curl -s '#{request}' &`
+  end
+
+end 
