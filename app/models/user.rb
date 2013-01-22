@@ -3,7 +3,6 @@ class User < ActiveRecord::Base
   attr_accessible :first, :email, :company, :phone, :source, :fullname
   
   before_create { set_defaults() }
-  before_save { update_mp() }
 
   def set_defaults()
 
