@@ -8,8 +8,6 @@ class User < ActiveRecord::Base
 
     # generate token
     generate_token(:token)
-
-    update_mp();
     
   end
   
