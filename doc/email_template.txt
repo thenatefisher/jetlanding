@@ -1,0 +1,7 @@
+Hey ${$first_name}, I work for JetDeck and think ${company} is a great candidate for our <a href="http://www.jetdeck.co/i/${user_token}">private beta</a>. JetDeck is an inventory and customer management app specifically designed for aircraft brokers. If you or your team is looking for an innovative way to connect aircraft buyers and sellers in the modern age, <a href="http://www.jetdeck.co/i/${user_token}">request an invite</a> and I'll make sure you get a chance to play with the app this week.
+<br><br>
+I'll be happy to answer any questions. 
+<br><br>
+Best, Nate Fisher<br>
+nate@jetdeck.co
+<img src="http://www.jetdeck.co/et/${user_token}">
