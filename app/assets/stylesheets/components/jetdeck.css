@@ -1,0 +1,275 @@
+
+.header-right {
+     float: right;
+     font: 700 14px/33px 'proxima-nova',sans-serif;
+     text-align: right;
+     text-transform: uppercase;
+     width: 865px;
+}
+
+
+.button {
+     background: none repeat scroll 0% 0% rgb(46, 92, 177);
+     border-radius: 3px 3px 3px 3px;
+     color: #FFFFFF;
+     cursor: pointer;
+     display: inline-block;
+     line-height: 33px;
+     margin: 0px 0px 0px 12px;
+     padding: 0px 13px;
+     text-decoration: none ! important;
+     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+     transition: all 0.3s ease-in-out 0s ;
+}
+
+.button:hover {
+     background: none repeat scroll 0% 0% #666666;
+     color: #FFFFFF;
+     transition: background 0.3s ease-in-out 0s;
+}
+
+.btn-grey-sm {
+     background: none repeat scroll 0% 0% #7F8C8D;
+}
+
+
+
+.btn-trial span {
+    
+}
+
+
+.btn-hldr {
+     overflow: hidden;
+     text-align: center;
+}
+
+.btn-feature {
+     background: none repeat scroll 0% 0% #C2CEB7;
+     border-radius: 5px 5px 5px 5px;
+     border: 1px solid #B9C8AA;
+     color: #FFFFFF;
+     cursor: pointer;
+     display: inline-block;
+     font: 700 14px/32px 'proxima-nova',sans-serif;
+     height: 32px;
+     padding: 0px 14px 0px 0px;
+     text-decoration: none;
+     text-shadow: 1px 1px 1px #A1AB98;
+     text-transform: uppercase;
+     transition: all 0.3s ease-in-out 0s ;
+     width: 180px;
+}
+
+.btn-feature span {
+     display: inline-block;
+     padding: 0px 0px 0px 14px;
+}
+
+.btn-feature:hover {
+     background: none repeat scroll 0% 0% #A3B197;
+     border: 1px solid #8B9B7A;
+     color: #FFFFFF;
+     transition: all 0.3s ease-in-out 0s ;
+}
+
+
+
+.trial-box .btns {
+     float: right;
+     margin: 0px 0px 0px 72px;
+     width: 519px;
+}
+
+.trial-box .btns a {
+     background: none repeat scroll 0% 0% #78AB49;
+     border-radius: 5px 5px 5px 5px;
+     color: #FFFFFF;
+     display: block;
+     font-size: 14px;
+     font-weight: bold;
+     height: 76px;
+     line-height: 76px;
+     margin: 0px 0px 17px;
+     text-align: center;
+     text-decoration: none;
+     text-shadow: none;
+     text-transform: uppercase;
+     transition: all 0.3s ease-in-out 0s ;
+     width: 519px;
+}
+
+.trial-box .btns a:hover {
+     background: none repeat scroll 0% 0% #333333;
+     color: #FFFFFF;
+     transition: all 0.3s ease-in-out 0s ;
+}
+
+
+
+
+
+
+#showcase i { color: rgb(46, 92, 177);}
+
+#showcase { margin-top: 0px; padding: 40px 0px; background: #BDC3C7; }
+
+.sweatband {
+        min-width: 1000px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background: rgb(46, 92, 177);
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        height: 8px;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.slide h2 {
+        font: 400 34px/40px 'Open Sans', sans-serif;
+        margin: 18px 0;
+        font-weight: normal;
+        color: white;
+        text-rendering: optimizelegibility;
+}
+
+.shadow-line {
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #ffffff;
+}
+
+.big-btn:link, .big-btn:visited {
+        color: #ffffff;
+}
+
+.big-btn:link, .big-btn:visited {
+        color: #ffffff;
+}
+
+.big-btn {
+        display: inline-block;
+        font: 400 24px/39px 'Open Sans', sans-serif;
+        padding: 12px 36px;
+        margin: 8px 0px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        color: #fff;
+        text-shadow: #3799ca 0 -1px 0;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+        background-color: #d84a38;
+        background-image: -moz-linear-gradient(top, #de6454, #d84a38);
+        background-image: -ms-linear-gradient(top, #de6454, #d84a38);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#de6454), to(#d84a38));
+        background-image: -webkit-linear-gradient(top, #de6454, #d84a38);
+        background-image: -o-linear-gradient(top, #de6454, #d84a38);
+        background-image: linear-gradient(top, #de6454, #d84a38);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#de6454', endColorstr='#d84a38', GradientType=0);
+}
+
+#invite-submit-input {
+        padding: 6px;
+        background: #eee;
+        margin-top: 8px;
+        margin-left: 0px;
+        margin-right: 20px;
+        height: 50px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+} 
+
+#invite-submit-input input {
+        margin: 0px;
+        height: 47px;
+        font-size: 23px;
+        padding: 0px;
+        padding-left: 10px;
+        line-height: 27px;
+        background: #f1ddd9;
+}         
+
+
+#nav {
+     display: inline-block;
+     list-style: none outside none;
+     margin: 0px;
+     padding: 0px;
+     text-shadow: none;
+}
+
+#nav li {
+     display: inline-block;
+     padding: 0px 13px 0px 10px;
+}
+
+#nav li a:hover, #nav li.active a {
+     border-bottom: 2px solid #FFFFFF;
+     color: #FFFFFF;
+     padding-bottom: 5px;
+     text-decoration: none;
+     transition: all 0.3s ease-in-out 0s ;
+}
+
+#nav li a {
+     color: #FFFFFF;
+     text-decoration: none;
+     transition: all 0.3s ease-in-out 0s ;
+}
+
+.btn-trial, .btn-green {
+     background: none repeat scroll 0% 0% #3498DB;
+     border-radius: 5px 5px 5px 5px;
+     color: #FFFFFF;
+     cursor: pointer;
+     display: inline-block;
+     font: 700 20px/63px 'proxima-nova',sans-serif;
+     padding: 0px 31px;
+     text-decoration: none ! important;
+     text-shadow: none;
+     text-transform: uppercase;
+     transition: all 0.3s ease-in-out 0s ;
+}
+
+.btn-trial:hover {
+     background: none repeat scroll 0% 0% #2980B9;
+     box-shadow: none;
+     color: #FFFFFF;
+     text-shadow: none;
+     transition: all 0.3s ease-in-out 0s ;
+}
+
+.quote .btn-trial {
+     margin: 0px 0px 15px;
+     padding: 0px 31px 0px 20px;
+}
+
+.quote .btn-trial span {
+     padding: 0px 20px 0px 51px;
+}
+.description {
+    font-family: 'Lato',sans-serif;
+    color: #FFFFFF;
+    float: left;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 25px 15px 0px 0px;
+    width: 350px;
+}
+.description p {
+    margin: 0px 0px 50px;
+    color: #FFFFFF;
+    font-family: 'Lato',sans-serif;
+    text-shadow: 1px 1px 0px #7F8C8D;
+}
+.description h1, .description h2 {
+    font-family: 'Lato',sans-serif;
+    margin: 0px 0px 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+}

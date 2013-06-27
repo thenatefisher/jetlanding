@@ -7,11 +7,3 @@ development:
   username: jetdeck
   password: jetdeck
   timeout: 5000
-
-test:
-  adapter: postgresql
-  database: jetlanding_test
-  username: jetdeck
-  password: jetdeck
-  timeout: 5000
-

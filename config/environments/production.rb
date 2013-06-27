@@ -30,8 +30,6 @@ Jetlanding::Application.configure do
   # mix panel
   config.mixpanel_token = "b3dba5a4a7428924b5f9684309b94038"
 
-  config.action_mailer.default_url_options = { :host => "jetdeck.co" }
-
   config.font_awesome = true
-    
+
 end

@@ -1,10 +1,8 @@
  /*
  *= require lib/bootstrap
+ *= require lib/bootstrap-responsive
  *= require components/fontawesome
- *= require components/footer 
- *= require components/navbar 
- *= require components/features 
- *= require components/masthead  
- *= require components/media_default
+ *= require components/theme
+ *= require components/jetdeck
  *= require_self
 */
