@@ -265,7 +265,7 @@
     margin: 0px 0px 50px;
     color: #FFFFFF;
     font-family: 'Lato',sans-serif;
-    text-shadow: 1px 1px 0px #7F8C8D;
+    text-shadow: none;
 }
 .description h1, .description h2 {
     font-family: 'Lato',sans-serif;
