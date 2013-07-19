@@ -134,9 +134,11 @@
           </div>
         </div>
 
-        <div class="span8">
+        <div class="span8" style="position: relative">
           <!-- HERO SHOT -->
-          <img src="/assets/hero.png" style="margin-top: 40px; width: 90%; float: right;" alt="">
+   
+          <img src="/assets/hero.png" onclick="$('#demovid').modal('show')" style="cursor: pointer; margin-top: 40px; width: 90%; float: right;" alt="">
+
         </div>
       </div>
 
@@ -414,6 +416,14 @@
             </div>                      
         </div>
     </footer>
+
+<div class="modal hide fade" id="demovid">
+  <div class="modal-body text-center">
+<iframe width="480" height="360" src="//www.youtube.com/embed/iZ8_PU0t4PE?rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+
 
 </body>
 
