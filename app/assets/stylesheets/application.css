@@ -4,5 +4,6 @@
  *= require components/fontawesome
  *= require components/theme
  *= require components/jetdeck
+ *= require flexslider
  *= require_self
 */
